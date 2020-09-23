@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "barkat"
+    }
+  },
+  "defaultProject": "barkat",
+  "cli": {
+    "analytics": "dc26b3b7-e11d-46e9-8947-6ab28e78f086"
+  }
 }
