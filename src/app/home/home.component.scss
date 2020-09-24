@@ -1,0 +1,21 @@
+.main{
+    height:100vh;
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(49, 49, 49, 0.8), 
+      rgba(49, 49 ,49, 0.45)
+    ),
+  
+    /* bottom, image */
+    url("../../assets/plants.png");
+    // background-image: url("../../assets/plants.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main::after{
+    content:'';
+    color:black;
+}

@@ -1,0 +1,14 @@
+.main{
+    height:5rem;
+    display:flex;
+    width:100%;
+    align-items:center
+}
+
+.main > div >span{
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 600;
+}
