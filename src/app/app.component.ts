@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'barkat';
+  constructor() { }
+
+  homeHeader = false;
+
+  @HostListener('window:scroll', ['$event']) scrollHandler(event) {
+    if (event.path[1]['scrollY'] > (window.innerHeight - 20)) {
+      this.homeHeader = true;
+    }
+    else {
+      this.homeHeader = false;
+    }
+  }
+
 }
