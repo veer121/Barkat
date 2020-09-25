@@ -1,0 +1,30 @@
+.global-header {
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    left: 0;
+
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.headerAnim {
+    top: 0px !important;
+
+    background-image: linear-gradient(45deg, #ff5722 40%, transparent 10%);
+    background-size: 400%;
+
+    animation: gradAppear 1s forwards ease-out;
+}
+@keyframes gradAppear {
+    from {
+        background-position: 100%;
+        background-color: transparent;
+    }
+    60%{
+        background-position: 10%;
+    }
+    to {
+        background-color: #ff56227c;
+    }
+}
