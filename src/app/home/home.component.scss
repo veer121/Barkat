@@ -19,3 +19,18 @@
     content:'';
     color:black;
 }
+.watch-btn{
+    margin-top:2%;  
+    border:1px solid rgb(58,155,220);
+    width:35%;
+    text-align:center;
+    padding:10px 15px;
+    border-radius:30px;
+    font-size:1.4rem;
+    color:rgb(52,152,219);
+    cursor:pointer
+}
+.watch-btn:hover{
+    color:white;
+    background-color: rgb(52,152,219);
+}

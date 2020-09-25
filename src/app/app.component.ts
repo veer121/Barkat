@@ -11,7 +11,7 @@ export class AppComponent {
   homeHeader = false;
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event) {
-    if (event.path[1]['scrollY'] > (window.innerHeight - 20)) {
+    if (event.path[1]['scrollY'] > (window.innerHeight - 70)) {
       this.homeHeader = true;
     }
     else {
