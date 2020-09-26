@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,17 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  homeHeader = false;
+
+  @HostListener('window:scroll', ['$event']) scrollHandler(event) {
+    if (event.path[1]['scrollY'] > (window.innerHeight - 70)) {
+      this.homeHeader = true;
+    }
+    else {
+      this.homeHeader = false;
+    }
   }
 
 }

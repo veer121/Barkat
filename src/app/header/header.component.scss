@@ -1,3 +1,8 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 .main{
     // position: fixed;
     top: 0;
@@ -9,11 +14,47 @@
     align-items:center
 }
 
-.main > div >span{
+.nav-links{
+    display:flex;
+    align-items: center;
     margin-left:1.5rem;
     margin-right:1.5rem;
     font-size: 1rem;
     color:white;
     font-weight: 600;
     cursor:pointer;
+}
+.sign-up{
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    display:flex;
+    align-items: center;
+    border:1px solid rgb(218,165,32);
+    padding:7px 20px;
+    background-color:rgb(218,165,32);
+    text-align: center;
+    color:white;
+    cursor:pointer;
+    border-radius:30px
+}
+
+.sign-up-anime{
+    display:flex;
+    align-items: center;
+    border:1px solid rgb(218,165,32);
+    padding:10px 30px;
+    background-color:rgb(218,165,32);
+    text-align: center;
+    color:white;
+    cursor:pointer;
+    clip-path: polygon(17% 0, 100% 0, 100% 100%, 0 100%)
+}
+
+.nav-links-anime{
+    padding:1.5rem ;
+    font-size: 1rem;
+    color:white;
+    font-weight: 600;
+    cursor:pointer;
+
 }
