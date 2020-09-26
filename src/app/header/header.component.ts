@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   homeHeader = false;
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event) {
-    if (event.path[1]['scrollY'] > (window.innerHeight - 70)) {
+    if (event.path[1]['scrollY'] > (70)) {
       this.homeHeader = true;
     }
     else {
