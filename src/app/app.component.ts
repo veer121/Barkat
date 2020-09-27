@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +7,20 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() { }
+  constructor(public route: Router) { }
 
-  homeHeader = false;
+  homeHeader;
+
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event) {
+
     if (event.path[1]['scrollY'] > (window.innerHeight - 70)) {
       this.homeHeader = true;
     }
     else {
       this.homeHeader = false;
     }
+
   }
 
 }
