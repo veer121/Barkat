@@ -1,6 +1,6 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import {gsap} from 'gsap';
-import {DOCUMENT} from '@angular/common';
+import { gsap } from 'gsap';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,23 +14,25 @@ export class AppComponent {
     this.anim();
   }
 
-  homeHeader = false;
+  homeHeader
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event) {
+
     if (event.path[1]['scrollY'] > (window.innerHeight - 70)) {
       this.homeHeader = true;
     }
     else {
       this.homeHeader = false;
     }
+
   }
 
-  anim(){
-    gsap.from(this.document.querySelector('.social-icons'),{
-      duration:0.5,
-      left:-100,
-      opacity:0,
-      delay:0.7
+  anim() {
+    gsap.from(this.document.querySelector('.social-icons'), {
+      duration: 0.5,
+      left: -100,
+      opacity: 0,
+      delay: 0.7
     })
   }
 

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
@@ -14,6 +16,8 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
     SidebarComponent,
     HomeComponent,
     HeaderComponent,
+    FooterComponent,
+    ContactUsComponent,
     SocialIconsComponent
   ],
   imports: [

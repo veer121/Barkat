@@ -1,6 +1,44 @@
-.main{
-    display:flex;
-    flex-direction:column;
-    width:inherit;
-    align-items: flex-start;;
+.main {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: flex-start;
+}
+
+.box {
+    width: 48px;
+    height: 48px;
+    transition: 0.3s;
+    display: flex;
+}
+.box span {
+    color: white;
+}
+
+.box a {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    color: white;
+    line-height: 48px;
+    font-size: 22px;
+}
+
+.fb {
+    background-color: #4267b2;
+    border-top-right-radius: 8px;
+}
+.twit {
+    background-color: #55acee;
+}
+.link {
+    background-color: #0077b5;
+}
+.mail{
+    background-color: #7d7d7d;
+    border-bottom-right-radius: 8px;
+}
+
+.expandBox {
+    width: 100px !important;
 }
