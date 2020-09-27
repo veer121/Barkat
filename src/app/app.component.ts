@@ -1,4 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import {gsap} from 'gsap';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  ngOnInit(): void {
+    this.anim();
+  }
 
   homeHeader = false;
 
@@ -17,6 +23,15 @@ export class AppComponent {
     else {
       this.homeHeader = false;
     }
+  }
+
+  anim(){
+    gsap.from(this.document.querySelector('.social-icons'),{
+      duration:0.5,
+      left:-100,
+      opacity:0,
+      delay:0.7
+    })
   }
 
 }
