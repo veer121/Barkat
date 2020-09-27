@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { gsap } from 'gsap';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(public route: Router) { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
-  homeHeader;
+  ngOnInit(): void {
+    this.anim();
+  }
 
+  homeHeader
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event) {
 
@@ -21,6 +25,15 @@ export class AppComponent {
       this.homeHeader = false;
     }
 
+  }
+
+  anim() {
+    gsap.from(this.document.querySelector('.social-icons'), {
+      duration: 0.5,
+      left: -100,
+      opacity: 0,
+      delay: 0.7
+    })
   }
 
 }

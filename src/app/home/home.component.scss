@@ -55,6 +55,15 @@
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+
+}
+
+.blue-zone>div{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
 
 .orange-zone{
@@ -63,8 +72,8 @@
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-        rgba(230, 129, 61, 0.9), 
-        rgba(230, 129, 61, 0.9)
+        rgba(240, 141, 76, 0.9), 
+        rgba(240, 142, 76, 0.9)
     ),
   
     /* bottom, image */
@@ -82,4 +91,89 @@
     justify-content: space-evenly;
     font-family: 'Caveat', cursive;
     color:rgb(54,75,96)
+}
+
+.help-btn-area{
+    height:30vh;
+    background-color: rgb(245,245,245);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-btn{
+    border:2px solid rgb(218,165,32);
+    color:rgb(218,165,32);
+    padding:13px 35px;
+    font-size:1.3rem;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.help-btn:hover{
+    color:white;
+    background-color:rgb(218,165,32);
+    box-shadow:1px 1px 3px 1px rgb(156, 155, 155);
+}
+
+.call-area{
+    margin-top:2%;
+    height:40vh;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.enrollment-btn{
+    margin-top:2%;
+    background-color:rgb(0,0,128);
+    color:white;
+    padding:13px 30px;
+    font-size:1.3rem;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.enrollment-btn:hover{
+    background-color: rgb(2, 2, 99);
+}
+
+.offers{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-btn{
+    font-size:1.1rem;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    padding:15px 60px;
+    border:2px solid white;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.service-btn:hover{
+    background-color: white;
+    color:rgba(230, 129, 61, 0.9)
+}
+
+.program-btn{
+    font-size:1.1rem;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    padding:15px 60px;
+    border:2px solid white;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+.program-btn:hover{
+    background-color: white;
+    color:rgba(230, 129, 61, 0.9)
 }
