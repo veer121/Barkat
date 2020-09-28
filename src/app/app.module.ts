@@ -9,6 +9,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { AdminPageComponent } from './admin-page/admin-page.component'
 
 @NgModule({
   declarations: [
@@ -18,11 +26,19 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
     HeaderComponent,
     FooterComponent,
     ContactUsComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

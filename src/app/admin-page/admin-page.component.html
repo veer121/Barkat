@@ -1,0 +1,20 @@
+<h1>Welcome To Admin Page</h1>
+
+<div *ngIf="auth.user | async as user; else showLogin">
+    {{data|json}}
+</div>
+
+<button (click)="out()">Logout</button>
+
+<ng-template #showLogin>
+
+    <form (ngSubmit)="submit()" [formGroup]="signIn">
+
+        <input type="text" formControlName="email">
+        <input type="text" formControlName="pass">
+
+        <button type="submit">Enter</button>
+
+    </form>
+
+</ng-template>
