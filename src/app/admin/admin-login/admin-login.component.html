@@ -1,0 +1,47 @@
+<div style="width: 100%; height: 100vh; display: flex; flex-direction: column; background-color: rgb(141, 141, 141);">
+
+    <div style="flex: 1;"></div>
+
+    <div style="width: 400px; margin: auto; padding: 24px; background-color: white;" class="card">
+
+        <div *ngIf="!loading;else loader">
+
+            <form (ngSubmit)="submit()" [formGroup]="signIn" style="display: flex; flex-direction: column;">
+
+                <br>
+                <br>
+
+                <mat-form-field class="form-field">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text" formControlName="email">
+                </mat-form-field>
+
+                <br>
+                <br>
+
+                <mat-form-field class="form-field">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="pass">
+                </mat-form-field>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <button mat-raised-button color="primary" type="submit">Sign In</button>
+
+            </form>
+
+        </div>
+
+        <ng-template #loader>
+            <div>Loading</div>
+        </ng-template>
+
+
+    </div>
+
+    <div style="flex: 1;"></div>
+
+</div>
