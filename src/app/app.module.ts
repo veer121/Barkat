@@ -16,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import { AdminPageComponent } from './admin-page/admin-page.component'
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AboutUsComponent } from './about-us/about-us.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdminPageComponent } from './admin-page/admin-page.component'
     FooterComponent,
     ContactUsComponent,
     SocialIconsComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
