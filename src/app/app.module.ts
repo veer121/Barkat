@@ -15,7 +15,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { AdminPageComponent } from './admin-page/admin-page.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatButtonModule } from '@angular/material/button'
     HeaderComponent,
     FooterComponent,
     ContactUsComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
