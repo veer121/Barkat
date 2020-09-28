@@ -26,19 +26,18 @@ $barkat-theme: mat-light-theme($barkat-primary, $barkat-accent, $barkat-warn);
 @include angular-material-theme($barkat-theme);
 
 /* You can add global styles to this file, and also import other style files */
+
+html,
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Nanum Gothic", sans-serif;
 }
-html,
-body {
-    height: 100%;
-}
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+
+*{
+    outline: none;
 }
 
 .mat-body,
@@ -47,5 +46,5 @@ body {
     // font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
     letter-spacing: normal;
     font-family: "Nanum Gothic", sans-serif !important;
-    font: unset!important;
+    font: unset !important;
 }

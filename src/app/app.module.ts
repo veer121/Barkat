@@ -16,7 +16,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import { AdminPageComponent } from './admin-page/admin-page.component'
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { AdminDashNavComponent } from './admin/admin-dash-nav/admin-dash-nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,10 @@ import { AdminPageComponent } from './admin-page/admin-page.component'
     FooterComponent,
     ContactUsComponent,
     SocialIconsComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    AdminLoginComponent,
+    AdminDashboardComponent,
+    AdminDashNavComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +48,9 @@ import { AdminPageComponent } from './admin-page/admin-page.component'
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
