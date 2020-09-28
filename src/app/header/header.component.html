@@ -1,7 +1,7 @@
 <div class="main ">
     <div style="margin-left:auto;display:flex;">
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}">Home</span>
-        <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}">How we help</span>
+        <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}" routerLink="/aboutus">How we help</span>
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}">Take the tour</span>
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}">Employement</span>
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}" routerLink="/contactus">Contact Us</span>

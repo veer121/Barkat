@@ -5,14 +5,15 @@ import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
-
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'contactus', component: ContactUsComponent },
   { path: 'adminLogin', component: AdminLoginComponent },
   { path: 'adminDash', component: AdminDashboardComponent },
-  { path: 'admin', component: AdminPageComponent }
+  { path: 'admin', component: AdminPageComponent },
+  { path: 'aboutus', component: AboutUsComponent },
 ];
 
 @NgModule({

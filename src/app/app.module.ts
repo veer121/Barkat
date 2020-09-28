@@ -23,6 +23,7 @@ import { AdminDashNavComponent } from './admin/admin-dash-nav/admin-dash-nav.com
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MatIconModule } from '@angular/material/icon';
     AdminPageComponent,
     AdminLoginComponent,
     AdminDashboardComponent,
-    AdminDashNavComponent
+    AdminDashNavComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
