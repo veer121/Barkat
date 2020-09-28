@@ -1,1 +1,44 @@
-<p>contact-us works!</p>
+<div style="min-height: 100vh; display: flex; flex-direction: column;">
+
+    <div style="flex: 1;"></div>
+
+    <div style="width: 50%; margin: 24px auto;">
+
+        <h1 style="text-align: center;">Contact Us</h1>
+
+        <form [formGroup]="contact" (ngSubmit)="submit()">
+
+            <mat-form-field class="form-field">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>Contact Number</mat-label>
+                <input matInput type="text" formControlName="contact">
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>Subject</mat-label>
+                <input matInput type="text" formControlName="subject">
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>Message</mat-label>
+                <textarea matInput rows="5" placeholder="Enter your message here" formControlName="message"></textarea>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit">Primary</button>
+
+        </form>
+
+    </div>
+
+    <div style="flex: 1;"></div>
+
+</div>
