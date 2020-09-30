@@ -200,6 +200,34 @@
     box-shadow:5px 10px 20px 0px rgba(0,0,0,0.2);
 }
 
+.cardy-main{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transition:all 0.5s ease;
+}
+
+.cardy-main-rotate{
+    transform:rotateY(180deg);
+}
+
+.cardy-front{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+}
+
+.cardy-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background:green;
+    transform:rotateY(180deg);
+}
+
 .cardy-header{
     position: absolute;
     width:100%;
@@ -278,6 +306,20 @@
 }
 
 .more > a:hover{
+    background: #353535;
+    color:white;
+}
+
+.more > span{
+    text-decoration: none;
+    padding:10px 30px;
+    color:#353535;
+    border:1px solid #353535;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.more > span:hover{
     background: #353535;
     color:white;
 }
