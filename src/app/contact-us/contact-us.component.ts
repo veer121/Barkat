@@ -47,4 +47,9 @@ export class ContactUsComponent implements OnInit {
 
   }
 
+  open(){
+    console.log("open")
+    document.querySelector(".letter").classList.toggle('letterOpen')
+  }
+
 }
