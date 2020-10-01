@@ -40,16 +40,20 @@ export class ContactUsComponent implements OnInit {
     this.object = { name: this.contact.get('name').value, email: this.contact.get('email').value, contact: this.contact.get('contact').value, subject: this.contact.get('subject').value, message: this.contact.get('message').value }
 
     this.db.object('contactus/' + this.db.createPushId()).set(this.object).then(res => {
-      console.log(res)
+      console.log(res);
+
+      document.getElementById("form-wrap").classList.remove("form-wrap-anim")
+      document.getElementById("form").classList.remove("form-anim")
+
     }).catch(err => {
       console.log(err)
     })
 
   }
 
-  open(){
-    console.log("open")
-    document.querySelector(".letter").classList.toggle('letterOpen')
+  open() {
+    document.getElementById("form-wrap").classList.add("form-wrap-anim")
+    document.getElementById("form").classList.add("form-anim")
   }
 
 }
