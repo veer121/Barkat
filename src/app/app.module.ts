@@ -24,6 +24,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CampaignComponent } from './campaign/campaign.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AdminLoginComponent,
     AdminDashboardComponent,
     AdminDashNavComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    CampaignComponent
   ],
   imports: [
     BrowserModule,

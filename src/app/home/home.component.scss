@@ -46,8 +46,8 @@
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(47, 152, 223, 0.9), 
-      rgba(41, 154, 230, 0.9)
+      rgba(86, 142, 166, 0.9), 
+      rgba(80, 140, 167, 0.9)
     ),
   
     /* bottom, image */
@@ -72,8 +72,8 @@
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-        rgba(240, 141, 76, 0.9), 
-        rgba(240, 142, 76, 0.9)
+        rgba(238, 88, 83, 0.9), 
+        rgba(238, 88, 83, 0.9), 
     ),
   
     /* bottom, image */
@@ -102,8 +102,8 @@
 }
 
 .help-btn{
-    border:2px solid rgb(218,165,32);
-    color:rgb(218,165,32);
+    border:2px solid rgb(238, 69, 64);
+    color:rgb(238, 69, 64);
     padding:13px 35px;
     font-size:1.3rem;
     border-radius: 30px;
@@ -112,7 +112,7 @@
 
 .help-btn:hover{
     color:white;
-    background-color:rgb(218,165,32);
+    background-color:rgb(238, 69, 64);
     box-shadow:1px 1px 3px 1px rgb(156, 155, 155);
 }
 
@@ -128,7 +128,7 @@
 
 .enrollment-btn{
     margin-top:2%;
-    background-color:rgb(0,0,128);
+    background-color:#510a32;
     color:white;
     padding:13px 30px;
     font-size:1.3rem;
@@ -137,7 +137,7 @@
 }
 
 .enrollment-btn:hover{
-    background-color: rgb(2, 2, 99);
+    background-color: #3d0726;
 }
 
 .offers{
