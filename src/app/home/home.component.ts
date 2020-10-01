@@ -27,12 +27,8 @@ export class HomeComponent implements OnInit {
 
 
   rotate(){
-    var t1=gsap.timeline();
-    t1.to(this.document.querySelector(".cardy-main"),{rotationY:180,duration:0.1}); 
-  }
-
-  rotate2(){
-    gsap.to(this.document.querySelector(".cardy-main"),{rotationY:360,duration:0.1})
+    document.querySelector(".cardy-main").classList.toggle('cardy-main-rotate')
+    document.querySelector(".cardy-front").classList.toggle("cardy-front-hide")
   }
 
 }
