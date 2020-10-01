@@ -212,6 +212,10 @@
     transform:rotateY(180deg);
 }
 
+.cardy-front-hide{
+    visibility: hidden;
+}
+
 .cardy-front{
     position:absolute;
     width:100%;
@@ -224,7 +228,7 @@
     width:100%;
     height:100%;
     backface-visibility: hidden;
-    background:green;
+    background:white;
     transform:rotateY(180deg);
 }
 
