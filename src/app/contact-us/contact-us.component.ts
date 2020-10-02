@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener  } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { FormArray, FormControl, FormGroup } from '@angular/forms'
@@ -33,6 +33,17 @@ export class ContactUsComponent implements OnInit {
   })
 
   ngOnInit(): void {
+  }
+
+  homeHeader = true;
+
+  @HostListener('window:scroll', ['$event']) scrollHandler(event) {
+    if (event.path[1]['scrollY'] > (window.innerHeight - 20)) {
+      this.homeHeader = false;
+    }
+    else {
+      this.homeHeader = true;
+    }
   }
 
   submit() {
