@@ -25,6 +25,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CampaignComponent } from './campaign/campaign.component';
     AdminDashboardComponent,
     AdminDashNavComponent,
     AboutUsComponent,
-    CampaignComponent
+    CampaignComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
