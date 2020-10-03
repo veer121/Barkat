@@ -117,7 +117,9 @@
 
 
 <div class="container p-cards">
-    <div class="cardy">
+    <div class="row">
+        <div class="col-md-4" style="margin:3% 0">
+    <div class=" cardy">
         <div class="cardy-main">
             <div class="cardy-front">
                 <div class="cardy-header">
@@ -139,8 +141,11 @@
                     <span (click)="rotate()">MORE</span>
                 </div>
             </div>
-            <div class="cardy-back">
-
+            <div class="cardy-back" style="position:relative">
+                <div style="position:absolute;left:20px;top:60px;text-align: center;">
+                    <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.</span>
+                </div>
                 <div class="more">
                     <span (click)="rotate()">BACK</span>
                 </div>
@@ -148,26 +153,8 @@
             </div>
         </div>
     </div>
-    <div class="cardy">
-        <div class="cardy-header">
-            <img src="../../assets/rsk.jpg" alt="">
-            <h2>person</h2>
-        </div>
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="iconss">
-            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="more">
-            <a href="">MORE</a>
-        </div>
-    </div>
+</div>
+    <div class="col-md-4" style="margin:3% 0">
     <div class="cardy">
         <div class="cardy-header">
             <img src="../../assets/rsk.jpg" alt="">
@@ -189,12 +176,80 @@
         </div>
     </div>
 </div>
+    <div class="col-md-4" style="margin:3% 0">
+    <div class="cardy">
+        <div class="cardy-header">
+            <img src="../../assets/rsk.jpg" alt="">
+            <h2>person</h2>
+        </div>
+        <div class="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="iconss">
+            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="link"><i class="fab fa-instagram"></i></a>
+            <a href="" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="more">
+            <a href="">MORE</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6" style="margin:3% auto">
+    <div class="cardy">
+        <div class="cardy-header">
+            <img src="../../assets/rsk.jpg" alt="">
+            <h2>person</h2>
+        </div>
+        <div class="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="iconss">
+            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="link"><i class="fab fa-instagram"></i></a>
+            <a href="" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="more">
+            <a href="">MORE</a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6" style="margin:3% 0">
+    <div class="cardy">
+        <div class="cardy-header">
+            <img src="../../assets/rsk.jpg" alt="">
+            <h2>person</h2>
+        </div>
+        <div class="wave-container">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="iconss">
+            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="link"><i class="fab fa-instagram"></i></a>
+            <a href="" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="more">
+            <a href="">MORE</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 
 <div class="container-fluid help-btn-area">
-    <span class="help-btn">How we help</span>
+    <span class="help-btn" routerLink="/aboutus">About Us</span>
 </div>
 
 <div class="container-fluid call-area">
     <span style="color:white;font-size:1.8rem;font-weight:600">Give us a call +91 9988776655</span>
-    <span class="enrollment-btn">Interested in Enrollment?</span>
+    <span class="enrollment-btn" routerLink="/contactus">Interested in Enrollment?</span>
 </div>

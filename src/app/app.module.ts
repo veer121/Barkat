@@ -29,6 +29,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FounderComponent } from './founder/founder.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutUsComponent,
     CampaignComponent,
     GalleryComponent,
-    ImageViewerComponent
+    ImageViewerComponent,
+    FounderComponent,
   ],
   imports: [
     BrowserModule,
