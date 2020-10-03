@@ -33,6 +33,7 @@ export class ContactUsComponent implements OnInit {
   })
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
   homeHeader = true;

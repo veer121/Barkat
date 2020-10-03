@@ -27,7 +27,7 @@
                 <div class="row">
                         <div class="col-md-4">
                                 <span
-                                        style="font-size:3.5rem;border-bottom: 1px solid rgb(146,159,170);padding-bottom:10%">Our
+                                        style="font-size:3.5rem;padding-bottom:10%">Our
                                         Aim</span>
                         </div>
                         <div class="col-md-8" style="display:flex;flex-direction:column">
@@ -43,23 +43,30 @@
                         </div>
                 </div>
 
+                <div class="row" style="margin-top:10%">
+                        <div class="col-md-4">
+                                <span style="font-size:3rem;padding-bottom:10%">Our Associates</span>
+                        </div>
+                        <div class="col-md-12">
                 <!-- OWL Crousel -->
                 <div style="margin-top: 5vh;margin-bottom: 5vh;">
                         <owl-carousel-o [options]="customOptions">
                                 <ng-template carouselSlide *ngFor="let e of images">
                                         <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
-                                                <p [ngStyle]="{'color':e.color}">
-                                                        {{e.title}}</p>
+                                                <!-- <p [ngStyle]="{'color':e.color}">
+                                                        {{e.title}}</p> -->
                                         </div>
                                 </ng-template>
                         </owl-carousel-o>
                 </div>
+        </div>
+        </div>
                 <!-- OWL Crousel -->
 
                 <div class="row" style="margin-top:10%">
                         <div class="col-md-4">
                                 <span
-                                        style="font-size:3rem;border-bottom: 1px solid rgb(146,159,170);padding-bottom:10%">Our
+                                        style="font-size:3rem;padding-bottom:10%">Our
                                         Objectives</span>
                         </div>
                         <div class="col-md-7">
@@ -90,3 +97,12 @@
 
         </div>
 </div>
+
+<div class="container-fluid help-btn-area">
+        <span class="help-btn" routerLink="/campaign">Campaigns</span>
+    </div>
+
+    <div class="container-fluid call-area">
+        <span style="color:white;font-size:1.8rem;font-weight:600">Give us a call +91 9988776655</span>
+        <span class="enrollment-btn" routerLink="/contactus">Interested in Enrollment?</span>
+    </div>
