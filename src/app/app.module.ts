@@ -26,6 +26,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { MatDialogModule } from '@angular/material/dialog';
 import { FounderComponent } from './founder/founder.component';
 
 @NgModule({
@@ -44,7 +47,8 @@ import { FounderComponent } from './founder/founder.component';
     AboutUsComponent,
     CampaignComponent,
     GalleryComponent,
-    FounderComponent
+    ImageViewerComponent,
+    FounderComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,8 +62,11 @@ import { FounderComponent } from './founder/founder.component';
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    CarouselModule,
+    MatDialogModule,
   ],
+  entryComponents: [ImageViewerComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
