@@ -1,0 +1,38 @@
+.bg-patch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 80vh;
+    background: rgb(144, 172, 211);
+    z-index: -1;
+}
+.bg-patch img {
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    right: 40%;
+    top: 8%;
+}
+
+.kohli-bar {
+    width: 80%;
+    background-color: whitesmoke;
+    margin: auto;
+    height: 10vh;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 3px #80808094;
+    margin-top: -8%;
+}
+
+.kohli-bar-flex {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.kohli-bar-flex div {
+    height: 100%;
+}
