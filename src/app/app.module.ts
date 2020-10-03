@@ -27,6 +27,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     AdminDashNavComponent,
     AboutUsComponent,
     CampaignComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImageViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -58,8 +61,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
+    MatDialogModule,
   ],
+  entryComponents: [ImageViewerComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

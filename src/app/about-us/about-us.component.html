@@ -47,7 +47,7 @@
                 <div style="margin-top: 5vh;margin-bottom: 5vh;">
                         <owl-carousel-o [options]="customOptions">
                                 <ng-template carouselSlide *ngFor="let e of images">
-                                        <div [ngStyle]="{'background-image':e.image}" class="img-container">
+                                        <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
                                                 <p [ngStyle]="{'color':e.color}">
                                                         {{e.title}}</p>
                                         </div>
