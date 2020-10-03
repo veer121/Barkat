@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FounderComponent } from './founder/founder.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'aboutus', component: AboutUsComponent },
   { path: 'campaign', component: CampaignComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'founder', component: FounderComponent },
 ];
 
 @NgModule({

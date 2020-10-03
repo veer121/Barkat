@@ -26,6 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FounderComponent } from './founder/founder.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AdminDashNavComponent,
     AboutUsComponent,
     CampaignComponent,
-    GalleryComponent
+    GalleryComponent,
+    FounderComponent
   ],
   imports: [
     BrowserModule,
