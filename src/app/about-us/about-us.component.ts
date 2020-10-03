@@ -13,6 +13,7 @@ export class AboutUsComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
   homeHeader = true;
@@ -29,7 +30,10 @@ export class AboutUsComponent implements OnInit {
   /* ===================================== */
   customOptions: OwlOptions = {
     margin: 24,
-    loop: false,
+    autoplay:true,
+    autoplayHoverPause:true,
+    autoplaySpeed:200,
+    loop: true,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -54,12 +58,15 @@ export class AboutUsComponent implements OnInit {
   }
 
   images = [
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
-    { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img1.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img2.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img3.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img4.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img5.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img6.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img7.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img8.jpg)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/associates/img9.jpg)", title: 'Test Title', color: 'white' },
   ]
 
   openImage(img) {

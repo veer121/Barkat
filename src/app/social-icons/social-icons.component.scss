@@ -10,6 +10,7 @@
     height: 48px;
     transition: 0.3s;
     display: flex;
+    cursor:pointer;
 }
 .box span {
     color: white;
@@ -22,6 +23,7 @@
     color: white;
     line-height: 48px;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .fb {
@@ -40,5 +42,7 @@
 }
 
 .expandBox {
-    width: 100px !important;
+    width: 80px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

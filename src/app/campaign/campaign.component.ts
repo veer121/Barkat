@@ -11,6 +11,7 @@ export class CampaignComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
   homeHeader = true;
@@ -27,7 +28,7 @@ export class CampaignComponent implements OnInit {
   /* ================================== */
 
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,

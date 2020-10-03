@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
 
   homeHeader = true;
