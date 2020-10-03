@@ -26,6 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
