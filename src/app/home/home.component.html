@@ -17,31 +17,26 @@
     </div>
 </div>
 
-<!-- ---------------------------------------------Atomic-elements--------------------------------------------------------------- -->
+<!-- ---------------------------------------------Associates--------------------------------------------------------------- -->
 
-<div class="container-fluid" style="background-image:linear-gradient(to right,rgb(245,245,245), rgb(229,239,245))">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 atomic-col" style="background-color: rgb(247,247,247);">
-                <img src="../../assets/icon-atom.svg" alt="" style="max-width:35%;margin-bottom:5%">
-                <span style="font-size:1.7rem;font-weight: 700;margin-top:5%;margin-bottom:3%;color:rgb(52,73,94)">All
-                    Ages</span>
-                <span style="margin-top:3%;color:rgb(63,83,103)">Serving children and yound adults</span>
-            </div>
-            <div class="col-md-4 atomic-col" style="background-color: rgb(237,242,245);">
-                <img src="../../assets/icon-atom.svg" alt="" style="max-width:35%;margin-bottom:5%">
-                <span style="font-size:1.7rem;font-weight: 700;margin-top:5%;margin-bottom:3%;color:rgb(52,73,94)">All
-                    Ages</span>
-                <span style="margin-top:3%;color:rgb(63,83,103)">Serving children and yound adults</span>
-            </div>
-            <div class="col-md-4 atomic-col" style="    background-color: rgb(227,237,243);">
-                <img src="../../assets/icon-atom.svg" alt="" style="max-width:35%;margin-bottom:5%">
-                <span style="font-size:1.7rem;font-weight: 700;margin-top:5%;margin-bottom:3%;color:rgb(52,73,94)">All
-                    Ages</span>
-                <span style="margin-top:3%;color:rgb(63,83,103)">Serving children and yound adults</span>
-            </div>
-        </div>
+
+<div class="row" style="margin-top:10%">
+    <div class="col-md-12" style="display:flex;justify-content: center;">
+            <span style="font-size:3rem;font-weight: 600;color:rgb(52,73,94);">Our Associates</span>
     </div>
+    <div class="col-md-12">
+<!-- OWL Crousel -->
+<div style="margin-top: 5vh;margin-bottom: 5vh;">
+    <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let e of images">
+                    <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
+                            <!-- <p [ngStyle]="{'color':e.color}">
+                                    {{e.title}}</p> -->
+                    </div>
+            </ng-template>
+    </owl-carousel-o>
+</div>
+</div>
 </div>
 
 <div class="container">
@@ -92,25 +87,21 @@
 </div>
 <div class="orange-zone container-fluid">
     <div class="container" style="height:100%">
-        <div class="row" style="height:100%">
-            <div class="col-md-6 offers" style="box-shadow:4px 0 16px 0 rgba(221, 80, 75, 0.9);">
-                <span style="color:white;font-size:3rem;font-weight:700;margin-top:20%;margin-bottom:5%">Barkat</span>
-                <span style="color:white;font-size:2.3rem;font-weight:600;margin:5% 0;">Our Services</span>
-                <span
-                    style="color:white;font-size:1.5rem;font-family: 'Abel', sans-serif;text-align: center;margin:3% 0">Lorem
-                    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.</span>
-                <span class="service-btn">Services</span>
-            </div>
-            <div class="col-md-6 offers" style="box-shadow:1px 0 16px 0 rgba(221, 80, 75, 0.9)">
-                <span style="color:white;font-size:3rem;font-weight:700;margin-top:20%;margin-bottom:5%">Barkat</span>
-                <span style="color:white;font-size:2.3rem;font-weight:600;margin:5% 0;">Programs we offer</span>
-                <span
-                    style="color:white;font-size:1.5rem;font-family: 'Abel', sans-serif;text-align: center;margin:3% 0;">Lorem
-                    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.</span>
-                <span class="program-btn">Programs</span>
-            </div>
+        <div class="row" style="height:100%" >
+            <div class="col-md-12" style="display:flex;justify-content: center;margin-top:5%">
+                <span style="font-size:3rem;font-weight: 600;color:white;">Our Aim</span>
+        </div>
+            <div class="col-md-12" style="display:flex;flex-direction:column;line-height: 2rem;">
+                <span style="color:white;font-size:1.5rem;text-align: center;">Our work aims to break the vicious
+                        cycle of poverty and social isolation and to restore hope for a better future.
+                        We believe that every person has the right to access resources and opportunities
+                        in order to live and develop with dignity and to become an active and
+                        contributing member of our society. </span>
+                <span style="color:white;font-size:1.3rem;text-align: center;margin-top:3%">We also believe that
+                        we should provide our environment in return of what we take, so we are aiming to
+                        plant 10,000 plants in one month in our current drive and will be contributing
+                        to the environment ahead in future in whatever way we can.</span>
+        </div>
         </div>
     </div>
 </div>
@@ -119,12 +110,12 @@
 
 <div class="container p-cards">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let e of mentorImages;let i = index">
     <div class=" cardy" style="margin:10% auto">
         <div class="cardy-main">
-            <div class="cardy-front">
+            <div  class="cardy-front">
                 <div class="cardy-header">
-                    <img src="../../assets/founders/IMG-20200728-WA0036.jpg" alt="">
+                    <div [ngStyle]="{'background-image':e.image}"></div>
                     <h2>person</h2>
                 </div>
                 <div class="wave-container">
@@ -132,17 +123,21 @@
                     <div class="wave"></div>
                     <div class="wave"></div>
                 </div>
-                <div class="iconss">
+                <div class="iconss" *ngIf="i<3">
+                    <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="link"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="iconss" *ngIf="i>2">
                     <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
                     <a href="" class="link"><i class="fab fa-instagram"></i></a>
                     <a href="" class="link"><i class="fab fa-twitter"></i></a>
                     <a href="" class="link"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="more">
-                    <span (click)="rotate()">MORE</span>
+                <div *ngIf="i>2" class="more">
+                    <span (click)="rotate()">THOUGHT</span>
                 </div>
             </div>
-            <div class="cardy-back" style="position:relative">
+            <div *ngIf="i>2" class="cardy-back" style="position:relative">
                 <div style="position:absolute;left:20px;top:60px;text-align: center;">
                     <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.</span>
@@ -155,99 +150,12 @@
         </div>
     </div>
 </div>
-    <div class="col-md-4" >
-    <div class="cardy" style="margin:10% auto">
-        <div class="cardy-header">
-            <img src="../../assets/founders/IMG-20200923-WA0045.jpg" alt="">
-            <h2>person</h2>
-        </div>
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="iconss">
-            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="more">
-            <a href="">MORE</a>
-        </div>
-    </div>
-</div>
-    <div class="col-md-4">
-    <div class="cardy" style="margin:10% auto">
-        <div class="cardy-header">
-            <img src="../../assets/founders/IMG-20200923-WA0046.jpg" alt="">
-            <h2>person</h2>
-        </div>
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="iconss">
-            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="more">
-            <a href="">MORE</a>
-        </div>
-    </div>
-</div>
-<div class="col-md-6">
-    <div class="cardy" style="margin:10% auto">
-        <div class="cardy-header">
-            <img src="../../assets/founders/IMG-20200923-WA0047.jpg" alt="">
-            <h2>person</h2>
-        </div>
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="iconss">
-            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="more">
-            <a href="">MORE</a>
-        </div>
-    </div>
-</div>
-<div class="col-md-6" >
-    <div class="cardy" style="margin:10% auto">
-        <div class="cardy-header">
-            <img  src="../../assets/founders/IMG-20200209-WA0036-02.jpeg" alt="">
-            <h2>person</h2>
-        </div>
-        <div class="wave-container">
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-        <div class="iconss">
-            <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-            <a href="" class="link"><i class="fab fa-instagram"></i></a>
-            <a href="" class="link"><i class="fab fa-twitter"></i></a>
-            <a href="" class="link"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="more">
-            <a href="">MORE</a>
-        </div>
-    </div>
-</div>
+    
 </div>
 </div>
 
 <div class="container-fluid help-btn-area">
-    <span class="help-btn" routerLink="/aboutus">About Us</span>
+    <span class="help-btn" routerLink="/objective">Objectives</span>
 </div>
 
 <div class="container-fluid call-area">
