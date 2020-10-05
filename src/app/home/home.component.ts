@@ -30,9 +30,11 @@ export class HomeComponent implements OnInit {
   }
 
 
-  rotate(){
-    document.querySelector(".cardy-main").classList.toggle('cardy-main-rotate')
-    document.querySelector(".cardy-front").classList.toggle("cardy-front-hide")
+  rotate(i){
+
+
+    document.getElementById(i).classList.toggle('cardy-main-rotate')
+    document.querySelector(i).classList.toggle("cardy-front-hide")
   }
 
 
@@ -88,5 +90,10 @@ export class HomeComponent implements OnInit {
       {image:"url(../../assets/founders/IMG-20200728-WA0036.jpg)", name: '', fb: '', insta: '', twit: '', link: '', thought: ''},
       {image:"url(../../assets/founders/IMG-20200209-WA0036-022.jpeg)", name: '', fb: '', insta: '', twit: '', link: '', thought: ''}
     ]
+
+
+    play(){
+      
+    }
 
 }

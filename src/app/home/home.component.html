@@ -1,4 +1,4 @@
-<div class="main">
+<div class="container-fluid main">
     <app-header *ngIf="homeHeader"></app-header>
     <div class="container" style="display:flex;flex-direction:column;text-align: center;margin-top:5% ">
         <span style="font-size: 3rem;color:white">Barkat</span>
@@ -19,8 +19,8 @@
 
 <!-- ---------------------------------------------Associates--------------------------------------------------------------- -->
 
-
-<div class="row" style="margin-top:10%">
+<div class="container-fluid">
+<div class="row" style="margin-top:10%;">
     <div class="col-md-12" style="display:flex;justify-content: center;">
             <span style="font-size:3rem;font-weight: 600;color:rgb(52,73,94);">Our Associates</span>
     </div>
@@ -35,6 +35,7 @@
                     </div>
             </ng-template>
     </owl-carousel-o>
+</div>
 </div>
 </div>
 </div>
@@ -64,7 +65,7 @@
                 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
                 the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </span>
-            <span class="watch-btn">Watch Video</span>
+            <span class="watch-btn"  (click)="play()">Watch Video</span>
         </div>
     </div>
 </div>
@@ -112,7 +113,7 @@
     <div class="row">
         <div class="col-md-4" *ngFor="let e of mentorImages;let i = index">
     <div class=" cardy" style="margin:10% auto">
-        <div class="cardy-main">
+        <div class="cardy-main" id="{{i}}">
             <div  class="cardy-front">
                 <div class="cardy-header">
                     <div [ngStyle]="{'background-image':e.image}"></div>
@@ -134,7 +135,7 @@
                     <a href="" class="link"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div *ngIf="i>2" class="more">
-                    <span (click)="rotate()">THOUGHT</span>
+                    <span (click)="rotate(i)">THOUGHT</span>
                 </div>
             </div>
             <div *ngIf="i>2" class="cardy-back" style="position:relative">
@@ -143,7 +144,7 @@
                         industry's standard dummy text ever since the 1500s.</span>
                 </div>
                 <div class="more">
-                    <span (click)="rotate()">BACK</span>
+                    <span (click)="rotate(i)">BACK</span>
                 </div>
 
             </div>
