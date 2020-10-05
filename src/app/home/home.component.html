@@ -1,12 +1,10 @@
 <div class="container-fluid main">
     <app-header *ngIf="homeHeader"></app-header>
-    <div class="container" style="display:flex;flex-direction:column;text-align: center;margin-top:5% ">
-        <span style="font-size: 3rem;color:white">Barkat</span>
-        <span style="font-size: 3rem;color:white">Improving the quality of live for youth with</span>
-        <span style="font-size: 3rem;color:white">cognitive challanges and extraordinary behavioural</span>
-        <span style="font-size: 3rem;color:white">needs </span>
+    <div class="container main-text" style="display:flex;flex-direction:column;text-align: center;margin-top:5% ">
+        <span  style="font-size: calc(1rem + 3vw);color:white">Barkat</span>
+        <span style="color:white;text-align:center;">Improving the quality of live for youth with cognitive challanges and extraordinary behavioural needs</span>
         <div class="tour"
-            style="display:flex;margin:5% auto 0 auto;font-size:1.5rem;color:white;justify-content: center;border:none;border-radius:30px;box-shadow:1px 2px 1px 1px rgb(65, 65, 65);cursor:pointer">
+            style="display:flex;margin:5% auto 0 auto;font-size: calc(0.7rem + 1vw);color:white;justify-content: center;border:none;border-radius:30px;box-shadow:1px 2px 1px 1px rgb(65, 65, 65);cursor:pointer">
             <span
                 style="padding:10px 25px;background-color:#c72c41;border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
                 How we help</span>
@@ -22,7 +20,7 @@
 <div class="container-fluid">
 <div class="row" style="margin-top:10%;">
     <div class="col-md-12" style="display:flex;justify-content: center;">
-            <span style="font-size:3rem;font-weight: 600;color:rgb(52,73,94);">Our Associates</span>
+            <span class="associates" >Our Associates</span>
     </div>
     <div class="col-md-12">
 <!-- OWL Crousel -->
@@ -41,9 +39,9 @@
 </div>
 
 <div class="container">
-    <div class="row" style="height:90vh;display:flex;justify-content: space-around;align-items: center;">
+    <div class="row videoo">
         <div class="col-md-6">
-            <video id="my-video" class="video-js" controls preload="auto"  width="100%"  height="300"
+            <video id="my-video" class="video-js" controls preload="auto"  width="90%"  height="365"
                 poster="../../assets/tree.jpeg" data-setup="{}">
                 <source src="../../assets/yo.mp4" type="video/mp4" />
                 <source src="MY_VIDEO.webm" type="video/webm" />
@@ -65,7 +63,7 @@
                 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
                 the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </span>
-            <span class="watch-btn"  (click)="play()">Watch Video</span>
+            <!-- <span class="watch-btn"  (click)="play()">Watch Video</span> -->
         </div>
     </div>
 </div>
@@ -160,6 +158,5 @@
 </div>
 
 <div class="container-fluid call-area">
-    <span style="color:white;font-size:1.8rem;font-weight:600">Give us a call +91 9988776655</span>
     <span class="enrollment-btn" routerLink="/contactus">Interested in Enrollment?</span>
 </div>

@@ -16,14 +16,24 @@
     background-attachment: fixed;
 }
 
-.atomic-col{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    padding-top:7%;
-    padding-bottom:7%;
+.main-text>span:nth-child(2){
+    position:relative;
+    font-size: calc(1rem + 2vw)
 }
+
+.associates{
+    font-size:calc(2rem + 2vw);
+    font-weight: 600;
+    color:rgb(52,73,94);
+}
+
+.videoo{
+    min-height:75vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .watch-btn{
     margin-top:2%;  
     border:1px solid rgb(58,155,220);
@@ -180,8 +190,7 @@
 
 .p-cards{
     min-height: 100vh;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding:3% 0
 }
 
 .cardy{
@@ -309,7 +318,6 @@
     bottom:30px;
     left:50%;
     transform: translateX(-50%);
-    cursor:pointer;
 }
 
 .more > a{
@@ -411,4 +419,23 @@
     bottom: 0;
     text-align: center;
     font-size: 24px;
+  }
+
+  @media all and (max-width:768px){
+      .main-text>span:nth-child(1){
+          margin-top:50%;
+          
+      }
+      .main-text>span:nth-child(2){
+        line-height: 2rem;
+      }
+
+      .videoo{
+          display:flex;
+          flex-direction: column-reverse;
+      }
+
+      .videoo >div >video{
+          margin:10% 0;
+      }
   }
