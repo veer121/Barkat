@@ -35,4 +35,24 @@
 
 .kohli-bar-flex div {
     height: 100%;
+    line-height: 10vh;
+    white-space: nowrap;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#visitBtn {
+    width: fit-content;
+    margin: auto;
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 14px 24px 14px 24px;
+    border-radius: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.kohli-bar-flex :hover{
+    font-size: 20px;
 }

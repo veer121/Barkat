@@ -30,6 +30,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FounderComponent } from './founder/founder.component';
+import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { FounderComponent } from './founder/founder.component';
     GalleryComponent,
     ImageViewerComponent,
     FounderComponent,
+    MediaCuttingsComponent,
   ],
   imports: [
     BrowserModule,

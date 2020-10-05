@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FounderComponent } from './founder/founder.component';
+import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'campaign', component: CampaignComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'founder', component: FounderComponent },
+  { path: 'media', component: MediaCuttingsComponent },
 ];
 
 @NgModule({
