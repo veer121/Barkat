@@ -308,6 +308,7 @@
     bottom:30px;
     left:50%;
     transform: translateX(-50%);
+    cursor:pointer;
 }
 
 .more > a{
@@ -354,7 +355,7 @@
     left:-200px;
     top:-112%;
     background: linear-gradient(#353535,#383737);
-    animation: wave 3s infinite linear;
+    animation: wave 6s infinite linear;
 }
 
 @keyframes wave{
