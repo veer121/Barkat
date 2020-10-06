@@ -35,7 +35,7 @@ $mailBoxFlapL: rgb(255, 123, 123);
 #wrap {
     width: 530px;
     margin: 20px auto 0;
-    height: 750px;
+    height: 700px;
 }
 
 #form-wrap {
@@ -106,3 +106,57 @@ form {
 // #form-wrap:hover form{
 // height: 530px;
 // }
+
+
+
+@media all and (max-width:768px){
+
+    #wrap {
+        width: 400px;
+        height: 600px;
+    }
+
+    #form-wrap::before {
+        content: "";
+        position: absolute;
+        bottom: 90px;
+        left: 0px;
+        background-image: url(../../assets/before.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 317px;
+    }
+    
+    #form-wrap::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(../../assets/after.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 259px;
+    }
+
+    form {
+        background-color: white;
+        position: relative;
+        top: 200px;
+        overflow: hidden;
+        height: 200px;
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #cecece;
+        border-right: 3px;
+        transition: all 1s ease-in-out 0.3s;
+        box-shadow: 2px 2px 11px #80808075;
+        border-radius: 5px;
+    
+        background-image: url(../../assets/letter_bg.png);
+    }
+}
