@@ -16,19 +16,59 @@
     background-attachment: fixed;
 }
 
-.main >div{
-    margin-top:5%;
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    color:white;
+.main-text {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.main-text> span:nth-child(1){
+  margin-top:5%;
+  font-size:calc(2.5rem + 1vw);
+  font-weight:700
+}
+
+.main-text>span:nth-child(2){
+  font-size:calc(1.5rem + 1vw);
+  font-weight:600;
+  margin-top:5%
 }
 
 .description > div{
-    margin:5%;
+    margin:7% 0;
     display:flex;
     flex-direction:column;
-  }
+}
+
+.description > div >span{
+  color:rgb(52,73,94);
+  font-size:calc(1.1rem + 0.5vw)
+}
+
+.more-text>div{
+  margin:7% 0;
+  display:flex;
+  flex-direction:column;
+}
+
+.more-text>div> span:nth-child(1){
+  color:rgb(52,73,94);
+  font-size:calc(1.2rem + 0.4vw);
+}
+
+.more-text>div> span:nth-child(2){
+  color:rgb(52,73,94);
+  font-size:calc(1.2rem + 0.4vw);
+  margin-top:2%;
+}
+
+.activity-text{
+  font-size:calc(2rem + 1vw);
+  padding-bottom:10%;
+  margin:auto;
+}
 
   %boxshadow {
     box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
@@ -118,7 +158,7 @@ $white: #fafafa;
 
 .call-area{
   margin-top:2%;
-  height:40vh;
+  height:30vh;
   background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
   display:flex;
   flex-direction:column;
@@ -138,4 +178,30 @@ $white: #fafafa;
 
 .enrollment-btn:hover{
   background-color: #3d0726;
+}
+
+
+
+@media all and (max-width:768px){
+
+  .main-text>span:nth-child(1){
+    margin-top:45%;
+  }
+
+  .main-text>span:nth-child(2){
+    margin-top:15%;
+  }
+
+  .description >div >span:nth-child(2){
+    margin-top:10%;
+  }
+
+  .more-text>div{
+    margin:15% 0;
+  }
+
+  .more-text>div> span:nth-child(2){
+    margin-top:10%
+  }
+
 }

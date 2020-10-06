@@ -90,13 +90,13 @@
             <div class="col-md-12" style="display:flex;justify-content: center;margin-top:5%">
                 <span style="font-size:3rem;font-weight: 600;color:white;">Our Aim</span>
         </div>
-            <div class="col-md-12" style="display:flex;flex-direction:column;line-height: 2rem;">
-                <span style="color:white;font-size:1.5rem;text-align: center;">Our work aims to break the vicious
+            <div  class="col-md-12 orange-content">
+                <span >Our work aims to break the vicious
                         cycle of poverty and social isolation and to restore hope for a better future.
                         We believe that every person has the right to access resources and opportunities
                         in order to live and develop with dignity and to become an active and
                         contributing member of our society. </span>
-                <span style="color:white;font-size:1.3rem;text-align: center;margin-top:3%">We also believe that
+                <span >We also believe that
                         we should provide our environment in return of what we take, so we are aiming to
                         plant 10,000 plants in one month in our current drive and will be contributing
                         to the environment ahead in future in whatever way we can.</span>
@@ -115,7 +115,8 @@
             <div  class="cardy-front">
                 <div class="cardy-header">
                     <div [ngStyle]="{'background-image':e.image}"></div>
-                    <h2>person</h2>
+                    <h2>{{e.name}}</h2>
+                    <h3>( {{e.position}} )</h3>
                 </div>
                 <div class="wave-container">
                     <div class="wave"></div>
@@ -123,14 +124,14 @@
                     <div class="wave"></div>
                 </div>
                 <div class="iconss" *ngIf="i<3">
-                    <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="" class="link"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="iconss" *ngIf="i>2">
-                    <a href="" class="link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="" class="link"><i class="fab fa-instagram"></i></a>
-                    <a href="" class="link"><i class="fab fa-twitter"></i></a>
-                    <a href="" class="link"><i class="fab fa-linkedin"></i></a>
+                    <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                    <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a>
+                    <a href="{{e.link}}" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div *ngIf="i>2" class="more">
                     <span (click)="rotate(i)">THOUGHT</span>
