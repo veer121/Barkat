@@ -96,16 +96,31 @@ span {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    flex-direction: column;
 }
-.open-menu{
-    visibility: visible!important;
+.open-menu {
+    visibility: visible !important;
     opacity: 1;
 }
-.rotateBtn{
-    transform: rotate(180deg)!important;
+.rotateBtn {
+    transform: rotate(180deg) !important;
+}
+.mb-menu div {
+    display: flex;
+    flex-direction: column;
+}
+.mb-menu a {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 26px;
 }
 @media only screen and (max-width: 600px) {
     .main span {
         display: none;
+    }
+    .mb-menu span {
+        flex: 1;
     }
 }
