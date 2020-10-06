@@ -112,20 +112,20 @@ form {
 @media all and (max-width:768px){
 
     #wrap {
-        width: 400px;
+        width: 350px;
         height: 600px;
     }
 
     #form-wrap::before {
         content: "";
         position: absolute;
-        bottom: 90px;
+        bottom: 75px;
         left: 0px;
         background-image: url(../../assets/before.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 400px;
+        width: 350px;
         height: 317px;
     }
     
@@ -138,7 +138,7 @@ form {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 400px;
+        width: 350px;
         height: 259px;
     }
 
