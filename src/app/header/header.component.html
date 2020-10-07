@@ -15,8 +15,8 @@
         <div class="mb-display" [ngClass]="{'mb-container-padding':homeHeader}">
             <button mat-fab aria-label="menu"
                 [ngClass]="{'mb-action-color-static':!homeHeader,'mb-action-color-Anim':homeHeader}"
-                (click)="openMbMenu()" style="z-index: 20;transition: 0.3s;" id="button">
-                <mat-icon>{{navIcon}}</mat-icon>
+                (click)="openMbMenu()" style="transition: 0.3s;" id="button">
+                <mat-icon>menu</mat-icon>
             </button>
         </div>
 
@@ -24,7 +24,14 @@
 </div>
 <!-- [ngClass]="{'homeHeader'?'sign-up':'sign-up-anime'}"  -->
 
-<div class="mb-menu mb-flex-display" id="menu" style="z-index: -1;">
+<div class="mb-menu mb-flex-display" id="menu" style="z-index: 1;">
+
+    <button mat-fab aria-label="menu"
+        [ngClass]="{'mb-action-color-static':!homeHeader,'mb-action-color-Anim':homeHeader}" (click)="openMbMenu()"
+        style="z-index: 20;transition: 0.3s; position: absolute; top: 12px; right: 15px;" id="button">
+        <mat-icon>close</mat-icon>
+    </button>
+
     <span></span>
     <div (click)="openMbMenu()">
 
