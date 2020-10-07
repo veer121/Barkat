@@ -6,9 +6,9 @@
             lived"</span>
     </div>
 </div> -->
-<div class="container-fluid">
-<app-header *ngIf="homeHeader"></app-header>
-</div>
+
+
+
 
 <!-- <div class="container">
     <div class="row" style="height:30vh;text-align: center;display:flex;align-items: center;">
@@ -17,11 +17,16 @@
     </div>
 </div> -->
 
-<div style="min-height: 100vh;background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+<div style="min-height: 115vh;background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
 background-blend-mode: multiply,multiply;">
 
-    <div style="width:100%;display:flex;align-items: center;justify-content: center;">
-        <span style="font-size:2rem;color:white;font-weight:600;margin-top:3%">Send us a message</span>
+<div class="container-fluid">
+<app-header *ngIf="homeHeader"></app-header>
+</div>
+
+    <div class="main-text" >
+        <span>If you have any query or you want to join us, send us a message here</span>
+        <span>(Click on the envelope to fill the form)</span>
     </div>
     <div id="wrap">
 
@@ -59,7 +64,7 @@ background-blend-mode: multiply,multiply;">
                             formControlName="message"></textarea>
                     </mat-form-field>
 
-                    <button mat-raised-button color="primary" type="submit" >Submit</button>
+                    <button mat-raised-button color="primary" type="submit">Submit</button>
 
                 </form>
 

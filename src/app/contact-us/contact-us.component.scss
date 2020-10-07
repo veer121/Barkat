@@ -24,6 +24,29 @@
     color:white;
 }
 
+.main-text{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text>span:nth-child(1){
+    font-size:calc(1.3rem + 0.8vw);
+    color:white;
+    font-weight:600;
+    margin-top:3%;
+    text-align: center;
+}
+
+.main-text > span:nth-child(2){
+    font-size:calc(0.9rem + 0.6vw);
+    color:white;
+    font-weight:600;
+    margin-top:3%
+}
+
 .form-field {
     width: 100%;
 }
@@ -35,7 +58,7 @@ $mailBoxFlapL: rgb(255, 123, 123);
 #wrap {
     width: 530px;
     margin: 20px auto 0;
-    height: 700px;
+    height: 800px;
 }
 
 #form-wrap {
