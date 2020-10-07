@@ -45,5 +45,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
+<<<<<<< HEAD
 #config
 config.ts
+=======
+config.ts
+>>>>>>> a7a429a5eb2dd3009ac9dc38ea5b05b56150413f

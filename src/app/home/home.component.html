@@ -3,8 +3,7 @@
     <div class="container main-text" style="display:flex;flex-direction:column;text-align: center;margin-top:5% ">
         <span  style="font-size: calc(1rem + 3vw);color:white">Barkat</span>
         <span style="color:white;text-align:center;">Improving the quality of live for youth with cognitive challanges and extraordinary behavioural needs</span>
-        <div class="tour"
-            style="display:flex;margin:5% auto 0 auto;font-size: calc(0.7rem + 1vw);color:white;justify-content: center;border:none;border-radius:30px;box-shadow:1px 2px 1px 1px rgb(65, 65, 65);cursor:pointer">
+        <div class="tour">
             <span
                 style="padding:10px 25px;background-color:#c72c41;border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
                 How we help</span>
@@ -40,8 +39,8 @@
 
 <div class="container">
     <div class="row videoo">
-        <div class="col-md-6">
-            <video id="my-video" class="video-js" controls preload="auto"  width="90%"  height="365"
+        <div class="col-md-6 col-xs-12" style="width:100%">
+            <video style="margin-right:auto;margin-left:auto" id="my-video" class="video-js" controls preload="auto"  width="90%"  height="365"
                 poster="../../assets/tree.jpeg" data-setup="{}">
                 <source src="../../assets/yo.mp4" type="video/mp4" />
                 <source src="MY_VIDEO.webm" type="video/webm" />
@@ -53,8 +52,8 @@
             </video>
             
         </div>
-        <div class="col-md-6" style="display:flex;flex-direction:column;justify-content: space-evenly;">
-            <span style="color: rgb(52,73,94);font-size:2.5rem;font-weight:600">We're here to help</span>
+        <div class="col-md-6 col-xs-12" style="display:flex;flex-direction:column;justify-content: space-evenly;">
+            <span style="color: rgb(52,73,94);font-size:calc(1.8rem + 0.8vw);font-weight:600">We're here to help</span>
             <span style="color:rgb(60,80,100);font-size:1.3rem;margin-top:5%">Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
                 the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -109,7 +108,7 @@
 
 <div class="container p-cards">
     <div class="row">
-        <div class="col-md-4" *ngFor="let e of mentorImages;let i = index">
+        <div class="col-xs-4" *ngFor="let e of mentorImages;let i = index">
     <div class=" cardy" style="margin:10% auto">
         <div class="cardy-main" id="{{i}}">
             <div  class="cardy-front">
@@ -130,20 +129,15 @@
                 <div class="iconss" *ngIf="i>2">
                     <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
                     <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
-                    <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->
                     <a href="{{e.link}}" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div *ngIf="i>2" class="more">
-                    <span (click)="rotate(i)">THOUGHT</span>
-                </div>
+
             </div>
             <div *ngIf="i>2" class="cardy-back" style="position:relative">
                 <div style="position:absolute;left:20px;top:60px;text-align: center;">
                     <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.</span>
-                </div>
-                <div class="more">
-                    <span (click)="rotate(i)">BACK</span>
                 </div>
 
             </div>

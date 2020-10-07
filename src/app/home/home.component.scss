@@ -18,7 +18,19 @@
 
 .main-text>span:nth-child(2){
     position:relative;
-    font-size: calc(1rem + 2vw)
+    font-size:calc(1.5rem + 1vw)
+}
+
+.tour{
+    display:flex;
+    margin:5% auto 0 auto;
+    font-size: calc(1rem + 0.7vw);
+    color:white;
+    justify-content: center;
+    border:none;
+    border-radius:30px;
+    box-shadow:1px 2px 1px 1px rgb(65, 65, 65);
+    cursor:pointer
 }
 
 .associates{
@@ -32,6 +44,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
+    width:100%
 }
 
 .watch-btn{

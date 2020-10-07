@@ -7,7 +7,7 @@
     background: rgb(144, 172, 211);
     z-index: -1;
 }
-.bg-patch img {
+.founder-img {
     height: 90vh;
     position: absolute;
     z-index: -1;
@@ -93,4 +93,81 @@
     color: grey;
     padding-top: 0px;
     text-align: center;
+}
+
+.pc-head {
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    line-height: unset;
+}
+.pc-acts {
+    font-size: 1.5em;
+    color: grey;
+    padding-top: 24px;
+    text-align: center;
+}
+.second-img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .founder-img {
+        height: 80vh;
+    }
+    .pc-head {
+        font-size: 2.5em;
+    }
+    .kohli-bar {
+        margin-top: -14%;
+    }
+    .pc-acts {
+        font-size: 1.3em;
+    }
+    .kohli-bar-flex div {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .kohli-bar {
+        margin-top: -17%;
+    }
+    .kohli-bar-flex div {
+        font-size: 12px;
+    }
+    .pc-head {
+        font-size: 2em;
+    }
+    .pc-acts {
+        font-size: 1.1em;
+    }
+
+    .founder-img {
+        right: 5%;
+    }
+    .aboutFounder {
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .kohli-bar {
+        margin-top: -17%;
+        width: 90%;
+    }
+    .kohli-bar-flex div {
+        font-size: 12px;
+    }
+    .founder-img {
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .second-img {
+        width: unset;
+        height: 60vh;
+        margin: auto;
+        display: block;
+    }
 }
