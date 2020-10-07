@@ -124,3 +124,10 @@ span {
         flex: 1;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .nav-links{
+        margin-left: 1.0rem;
+        margin-right: 1.0rem;
+    }
+}
