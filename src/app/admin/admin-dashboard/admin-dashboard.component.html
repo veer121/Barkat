@@ -1,6 +1,25 @@
 <div style="min-height: 100vh">
 
-    <app-admin-dash-nav></app-admin-dash-nav>
+    <mat-drawer-container class="example-container" style="min-height: 100vh;">
+        <mat-drawer mode="side" opened>
+
+            <div style="height: 100%;">
+                <mat-selection-list #shoes [multiple]="false">
+                    <mat-list-option>DashBoard</mat-list-option>
+                    <mat-list-option>Contact Us</mat-list-option>
+                    <mat-list-option>Footer</mat-list-option>
+                    <mat-list-option>Media</mat-list-option>
+                    <mat-list-option>Album</mat-list-option>
+                </mat-selection-list>
+            </div>
+
+        </mat-drawer>
+        <mat-drawer-content>
+
+            <app-admin-dash-nav></app-admin-dash-nav>
+            
+        </mat-drawer-content>
+    </mat-drawer-container>
 
 </div>
 
