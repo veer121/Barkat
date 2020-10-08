@@ -23,7 +23,7 @@
     </div>
 </div> -->
 
-<div style="display: flex; flex-direction: column;">
+<div style="display: flex; flex-direction: column;" *ngIf="route.url!='/adminDash'">
 
     <div class="fb box" (mouseenter)="expand('box1')" (mouseleave)="expand('box1')" id="box1">
         <a  href="" class="fa fa-facebook"></a>
