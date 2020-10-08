@@ -14,28 +14,7 @@
     </div>
 </div>
 
-<!-- ---------------------------------------------Associates--------------------------------------------------------------- -->
 
-<div class="container-fluid">
-<div class="row" style="margin-top:10%;">
-    <div class="col-md-12" style="display:flex;justify-content: center;">
-            <span class="associates" >Our Associates</span>
-    </div>
-    <div class="col-md-12">
-<!-- OWL Crousel -->
-<div style="margin-top: 5vh;margin-bottom: 5vh;">
-    <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide *ngFor="let e of images">
-                    <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
-                            <!-- <p [ngStyle]="{'color':e.color}">
-                                    {{e.title}}</p> -->
-                    </div>
-            </ng-template>
-    </owl-carousel-o>
-</div>
-</div>
-</div>
-</div>
 
 <div class="container">
     <div class="row videoo">
@@ -52,16 +31,12 @@
             </video>
             
         </div>
-        <div class="col-md-6 col-xs-12" style="display:flex;flex-direction:column;justify-content: space-evenly;">
+        <div class="col-xs-12 col-md-6 " style="display:flex;flex-direction:column;justify-content: space-evenly;">
             <span style="color: rgb(52,73,94);font-size:calc(1.8rem + 0.8vw);font-weight:600">We're here to help</span>
-            <span style="color:rgb(60,80,100);font-size:1.3rem;margin-top:5%">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <span style="color:rgb(60,80,100);font-size:1.3rem;margin-top:5%">Barkat- “A step towards humanity
+                Our major objective as a welfare association is to identify the multi facet problems that our nation is facing and persistently sensitising the youth towards it.  We vision to facilitate the innate humanity within each individual and channelize it into compassionate and selfless service towards mankind. We thoroughly believe in and there by implement the principle of sewa, and endeavour to inculcate it within the youth."
             </span>
-            <span style="color:rgb(84,102,119);font-size:1.3rem;margin-top:3%">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </span>
+
             <!-- <span class="watch-btn"  (click)="play()">Watch Video</span> -->
         </div>
     </div>
@@ -86,11 +61,11 @@
 <div class="orange-zone container-fluid">
     <div class="container" style="height:100%">
         <div class="row" style="height:100%" >
-            <div class="col-md-12" style="display:flex;justify-content: center;margin-top:5%">
+            <div class="col-md-12" style="display:flex;justify-content: center;">
                 <span style="font-size:3rem;font-weight: 600;color:white;">Our Aim</span>
         </div>
             <div  class="col-md-12 orange-content">
-                <span >Our work aims to break the vicious
+                <span >Our work aims is to break the vicious
                         cycle of poverty and social isolation and to restore hope for a better future.
                         We believe that every person has the right to access resources and opportunities
                         in order to live and develop with dignity and to become an active and
@@ -147,6 +122,29 @@
     
 </div>
 </div>
+
+<!-- ---------------------------------------------Associates--------------------------------------------------------------- -->
+
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-md-12" style="display:flex;justify-content: center;">
+                <span class="associates" >Our Associates</span>
+        </div>
+        <div class="col-md-12">
+    <!-- OWL Crousel -->
+    <div style="margin-top: 5vh;margin-bottom: 5vh;">
+        <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let e of images">
+                        <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
+                                <!-- <p [ngStyle]="{'color':e.color}">
+                                        {{e.title}}</p> -->
+                        </div>
+                </ng-template>
+        </owl-carousel-o>
+    </div>
+    </div>
+    </div>
+    </div>
 
 <div class="container-fluid help-btn-area">
     <span class="help-btn" routerLink="/objective">Objectives</span>

@@ -1,8 +1,18 @@
 .footer {
     width: 100%;
-    height: 50vh;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    color: grey;
+    min-height: fit-content;
+    padding:5% 0;
+    background-color:rgb(40,44,47);
+    color:white;
+}
+
+.address{
+    display:flex;
+    align-items: center;
+    padding:5% 0;
+}
+
+.mail{
+    display:flex;
+    align-items: center;
 }
