@@ -31,6 +31,8 @@ import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FounderComponent } from './founder/founder.component';
 import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -67,6 +69,8 @@ import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.componen
     MatIconModule,
     CarouselModule,
     MatDialogModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   entryComponents: [ImageViewerComponent],
   providers: [],

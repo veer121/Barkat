@@ -1,18 +1,19 @@
-<mat-toolbar color="primary">
-    <button mat-icon-button>
-        <mat-icon>menu</mat-icon>
-    </button>
-    <span>Barkat Admin Management</span>
-    <span style="flex: 1;"></span>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>more_vert</mat-icon>
-    </button>
 
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="user.signOut()">
-            <mat-icon>exit_to_app</mat-icon>
-            <span>Logout</span>
-        </button>
-    </mat-menu>
+        <mat-toolbar color="primary">
+            <button mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Barkat Admin Management</span>
+            <span style="flex: 1;"></span>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
 
-</mat-toolbar>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="user.signOut()">
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Logout</span>
+                </button>
+            </mat-menu>
+
+        </mat-toolbar>

@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { gsap } from 'gsap';
 import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-social-icons',
@@ -9,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
 })
 export class SocialIconsComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document, public route: Router) { }
 
   ngOnInit(): void {
   }
