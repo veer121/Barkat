@@ -16,14 +16,28 @@ export class GalleryComponent implements OnInit {
   }
 
   images = [
+    { image: "url(../../assets/gallery/IMG-6519.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6516.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6508.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/7b78fc01-d9ea-4b0a-a1b8-63b33049aa3a.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6480.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6494.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6482.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6483.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6511.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6484.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6486.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6510.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6512.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6487.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6509.JPG)", title: 'Test Title', color: 'white' },
     { image: "url(../../assets/gallery/IMG-6488.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6505.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6518.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6493.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6502.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6496.JPG)", title: 'Test Title', color: 'white' },
+    { image: "url(../../assets/gallery/IMG-6503.JPG)", title: 'Test Title', color: 'white' },
   ];
 
   openImage(img) {
