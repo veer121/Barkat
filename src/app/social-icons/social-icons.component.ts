@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class SocialIconsComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT) private document: Document, public route: Router) { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
   }

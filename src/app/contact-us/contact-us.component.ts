@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener  } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { FormArray, FormControl, FormGroup } from '@angular/forms'
@@ -14,13 +14,6 @@ export class ContactUsComponent implements OnInit {
 
   constructor(public db: AngularFireDatabase) {
 
-    this.object = { name: 'kartik', subject: 'This is subject', message: 'This is a Message' }
-
-    // db.object('contactus/'+db.createPushId()).set(this.object).then(res => {
-    //   console.log(res)
-    // });
-
-    db.list('contactus').valueChanges().subscribe(res => console.log(res))
 
   }
 
@@ -33,7 +26,7 @@ export class ContactUsComponent implements OnInit {
   })
 
   ngOnInit(): void {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   homeHeader = true;
@@ -49,9 +42,11 @@ export class ContactUsComponent implements OnInit {
 
   submit() {
 
-    this.object = { name: this.contact.get('name').value, email: this.contact.get('email').value, contact: this.contact.get('contact').value, subject: this.contact.get('subject').value, message: this.contact.get('message').value }
+    var pushId = this.db.createPushId()
 
-    this.db.object('contactus/' + this.db.createPushId()).set(this.object).then(res => {
+    this.object = { id: pushId, name: this.contact.get('name').value, email: this.contact.get('email').value, contact: this.contact.get('contact').value, subject: this.contact.get('subject').value, message: this.contact.get('message').value, status: 'NEW' }
+
+    this.db.object('contactus/' + pushId).set(this.object).then(res => {
       console.log(res);
 
       document.getElementById("form-wrap").classList.remove("form-wrap-anim")
