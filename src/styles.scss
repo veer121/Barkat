@@ -87,4 +87,22 @@ body {
     .pc-display {
         display: none !important;
     }
+    .imageViewer .mat-dialog-container {
+        padding: 6px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .imageViewer {
+        max-width: 100vw !important;
+    }
+    .imageViewer img {
+        top: 50%;
+        position: relative;
+        transform: translate(0, -50%);
+    }
+    .viewer-icon {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+    }
 }

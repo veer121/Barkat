@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from 'firebase';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  constructor(public auth: AngularFireAuth) {
+  constructor(public auth: AngularFireAuth, public db: AngularFireDatabase) {
     this.checkUser();
   }
 
@@ -33,6 +34,16 @@ export class UserService {
 
   async signOut() {
     return await this.auth.signOut();
+  }
+
+  /** Fire base */
+
+  getContactUs() {
+    return this.db.list('contactus').valueChanges();
+  }
+
+  updateFooter(obj) {
+    return this.db.object('footer').set(obj);
   }
 
 }

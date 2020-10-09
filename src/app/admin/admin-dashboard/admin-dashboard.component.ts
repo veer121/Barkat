@@ -11,6 +11,7 @@ export class AdminDashboardComponent implements OnInit {
 
   constructor(public user: UserService, public route: Router) { }
 
+  page = 'summary'
   loading = true;
 
   ngOnInit(): void {

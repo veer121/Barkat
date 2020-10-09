@@ -32,7 +32,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FounderComponent } from './founder/founder.component';
 import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { AdminContactusComponent } from './admin/admin-contactus/admin-contactus.component';
+import { MatTableModule } from '@angular/material/table';
+import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
+import { AdminSummaryComponent } from './admin/admin-summary/admin-summary.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +57,9 @@ import {MatListModule} from '@angular/material/list';
     ImageViewerComponent,
     FounderComponent,
     MediaCuttingsComponent,
+    AdminContactusComponent,
+    AdminFooterComponent,
+    AdminSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +78,7 @@ import {MatListModule} from '@angular/material/list';
     MatDialogModule,
     MatSidenavModule,
     MatListModule,
+    MatTableModule
   ],
   entryComponents: [ImageViewerComponent],
   providers: [],

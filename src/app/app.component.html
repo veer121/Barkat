@@ -1,5 +1,5 @@
 <app-header class="global-header" [ngClass]="{'headerAnim':homeHeader}">
 </app-header>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
-<app-social-icons class="social-icons pc-flex-display"></app-social-icons>
+<app-footer *ngIf="route.url!='/adminDash' && route.url!='/adminLogin'"></app-footer>
+<app-social-icons class="social-icons pc-flex-display" *ngIf="route.url!='/adminDash'"></app-social-icons>
