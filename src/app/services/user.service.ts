@@ -39,9 +39,11 @@ export class UserService {
   /** Fire base */
 
   getContactUs() {
-
     return this.db.list('contactus').valueChanges();
+  }
 
+  updateFooter(obj) {
+    return this.db.object('footer').set(obj);
   }
 
 }
