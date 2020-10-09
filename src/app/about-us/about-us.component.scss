@@ -39,12 +39,12 @@
   flex-direction: column;
 }
 
-.description >div >span:nth-child(1){
+.description >div >p:nth-child(1){
   color:rgb(52,73,94);
   font-size:calc(1.2rem + 0.5vw)
 }
 
-.description >div >span:nth-child(2){
+.description >div >p:nth-child(2){
   color:rgb(83, 83, 83);
   font-size:calc(1rem + 0.5vw);
   margin-top:3%
@@ -198,6 +198,13 @@ ol.gradient-list {
 
 @media all and (max-width:768px){
 
+  .description >div >span:nth-child(2){
+    margin-top:10%;
+  }
+
+}
+
+@media all and (max-width:1024px){
   .main-text>span:nth-child(1){
     margin-top:45%;
   }
@@ -205,9 +212,4 @@ ol.gradient-list {
   .main-text>span:nth-child(2){
     margin-top:15%;
   }
-
-  .description >div >span:nth-child(2){
-    margin-top:10%;
-  }
-
 }

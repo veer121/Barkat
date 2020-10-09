@@ -42,7 +42,7 @@
     flex-direction:column;
 }
 
-.description > div >span{
+.description > div >p{
   color:rgb(52,73,94);
   font-size:calc(1.1rem + 0.5vw)
 }
@@ -53,12 +53,12 @@
   flex-direction:column;
 }
 
-.more-text>div> span:nth-child(1){
+.more-text>div> p:nth-child(1){
   color:rgb(52,73,94);
   font-size:calc(1.2rem + 0.4vw);
 }
 
-.more-text>div> span:nth-child(2){
+.more-text>div> p:nth-child(2){
   color:rgb(52,73,94);
   font-size:calc(1.2rem + 0.4vw);
   margin-top:2%;
@@ -134,6 +134,7 @@ $white: #fafafa;
   }
 
   .help-btn-area{
+    margin-top:2%;
     height:fit-content;
     padding:5% 0 ;
     background-color: rgb(245,245,245);
@@ -184,15 +185,7 @@ $white: #fafafa;
 
 
 
-@media all and (max-width:768px){
-
-  .main-text>span:nth-child(1){
-    margin-top:45%;
-  }
-
-  .main-text>span:nth-child(2){
-    margin-top:15%;
-  }
+@media all and (max-width:767.9px){
 
   .description > div{
     margin:12% 0;
@@ -211,4 +204,14 @@ $white: #fafafa;
     margin-top:10%
   }
 
+}
+
+@media all and (max-width:1024px){
+  .main-text>span:nth-child(1){
+    margin-top:45%;
+  }
+
+  .main-text>span:nth-child(2){
+    margin-top:15%;
+  }
 }
