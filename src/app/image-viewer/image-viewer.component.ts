@@ -15,8 +15,12 @@ export class ImageViewerComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<ImageViewerComponent>,
-    @Inject(MAT_DIALOG_DATA) public data) { 
-      this.img = data.substring(4,data.length-1)
-    }
+    @Inject(MAT_DIALOG_DATA) public data) {
+    this.img = data.substring(4, data.length - 1)
+  }
+
+  close() {
+    this.dialogRef.close();
+  }
 
 }

@@ -17,13 +17,13 @@
     </div>
 </div> -->
 
-<div class="main-back">
+<div class="main-back" style="min-height: 100vh;">
 
-<div class="container-fluid">
-<app-header *ngIf="homeHeader"></app-header>
-</div>
+    <div class="container-fluid">
+        <app-header *ngIf="homeHeader"></app-header>
+    </div>
 
-    <div class="main-text" >
+    <div class="main-text">
         <span>If you have any query or you want to join us, send us a message here</span>
         <span>(Click on the envelope to fill the form)</span>
     </div>
@@ -59,8 +59,7 @@
 
                     <mat-form-field class="form-field">
                         <mat-label>Message</mat-label>
-                        <textarea matInput rows="5" placeholder="How can we help?"
-                            formControlName="message"></textarea>
+                        <textarea matInput rows="5" placeholder="How can we help?" formControlName="message"></textarea>
                     </mat-form-field>
 
                     <button mat-raised-button color="primary" type="submit">Submit</button>
