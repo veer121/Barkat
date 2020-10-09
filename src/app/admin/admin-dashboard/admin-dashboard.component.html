@@ -1,13 +1,13 @@
 <div style="min-height: 100vh">
 
     <mat-drawer-container class="example-container" style="min-height: 100vh;">
-        <mat-drawer mode="side" opened>
+        <mat-drawer mode="side" opened style="z-index: 1;">
 
             <div style="height: 100%;">
                 <mat-selection-list #shoes [multiple]="false">
-                    <mat-list-option>DashBoard</mat-list-option>
-                    <mat-list-option>Contact Us</mat-list-option>
-                    <mat-list-option>Footer</mat-list-option>
+                    <mat-list-option (click)="page='summary'">Summary</mat-list-option>
+                    <mat-list-option (click)="page='contactus'">Contact Us</mat-list-option>
+                    <mat-list-option (click)="page='footer'">Footer</mat-list-option>
                     <mat-list-option>Media</mat-list-option>
                     <mat-list-option>Album</mat-list-option>
                 </mat-selection-list>
@@ -17,7 +17,12 @@
         <mat-drawer-content>
 
             <app-admin-dash-nav></app-admin-dash-nav>
-            
+            <div>
+                <app-admin-summary *ngIf="page=='summary'"></app-admin-summary>
+                <app-admin-contactus *ngIf="page=='contactus'"></app-admin-contactus>
+                <app-admin-footer *ngIf="page=='footer'"></app-admin-footer>
+            </div>
+
         </mat-drawer-content>
     </mat-drawer-container>
 

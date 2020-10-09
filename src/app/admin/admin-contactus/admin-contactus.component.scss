@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+}
+
+td,
+th,
+tr {
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    font-size: 20px;
+}
+
+tr {
+    border-bottom: 0.3px solid #80808063;
+    border-top: 0.3px solid #80808063;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.custom-dialog {
+    background-color: white;
+    padding: 24px;
+
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 200px;
+    min-width: 300px;
+    border-radius: 5px;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
