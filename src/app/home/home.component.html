@@ -97,11 +97,11 @@
                     <div class="wave"></div>
                     <div class="wave"></div>
                 </div>
-                <div class="iconss" *ngIf="i<3">
-                    <a href="" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                <div class="iconss" *ngIf="i>0 && i<4">
+                    <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="iconss" *ngIf="i>2">
+                <div class="iconss" *ngIf="i==0 || i==4">
                     <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
                     <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
                     <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->

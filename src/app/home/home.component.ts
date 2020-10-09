@@ -85,9 +85,9 @@ export class HomeComponent implements OnInit {
 
     mentorImages = [
       {image:"url(../../assets/founders/IMG-20200728-WA0036.jpg)", name: 'Randeep Singh Kohli', position:'Founder', fb: 'https://www.facebook.com/randeepskohli/', insta: 'https://instagram.com/kohlirandeep?igshid=1pds2axsi66rk', twit: '', link: 'http://linkedin.com/in/randeep-s-kohli-92104553', thought: ''},
-      {image:"url(../../assets/founders/IMG-20200923-WA00477.jpg)", name: 'Surjeet Kaur', position:'Co-ordinator', fb: '', insta: '', },
-      {image:"url(../../assets/founders/IMG-20200923-WA00456.jpg)", name: 'Pushmeet Kaur', position:'Co-founder', fb: '', insta: '', },
-      {image:"url(../../assets/founders/IMG-20200923-WA0046.jpg)", name: 'Simranjeet Singh', position:'International Ambassador', fb: '', insta: '', },
+      {image:"url(../../assets/founders/IMG-20200923-WA00477.jpg)", name: 'Surjeet Kaur', position:'Co-ordinator', fb: 'https://www.facebook.com/mini.kohli.12', insta: 'https://instagram.com/kohliminikohli?igshid=g90ibx873jic', },
+      {image:"url(../../assets/founders/IMG-20200923-WA00456.jpg)", name: 'Pushmeet Kaur', position:'Co-founder', fb: 'https://www.facebook.com/kohlihenna', insta: 'https://instagram.com/kohli_henna?igshid=ewhg9dyxi2c6', },
+      {image:"url(../../assets/founders/IMG-20200923-WA0046.jpg)", name: 'Simranjeet Singh', position:'International Ambassador', fb: 'https://www.facebook.com/profile.php?id=100000050764936', insta: 'https://instagram.com/simranhennamatharu.official?igshid=1ef1lh1qaxxkq', },
       {image:"url(../../assets/founders/IMG-20200209-WA0036-022.jpeg)", name: 'Simarpreet Singh Sethi', position:'Vice President', fb: 'https://www.facebook.com/simarpreetsingh.sethi.5', insta: 'https://instagram.com/simar713?igshid=169mf4941ku33', twit: '', link: 'https://www.linkedin.com/in/simarpreet-singh-sethi-5098711a9', thought: ''}
     ]
 
