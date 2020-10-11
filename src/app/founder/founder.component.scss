@@ -112,6 +112,15 @@
     width: 100%;
 }
 
+.bg-patch-new {
+    background: rgb(144, 172, 211);
+    width: 42vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 @media only screen and (max-width: 1150px) {
     .founder-img {
         height: 80vh;

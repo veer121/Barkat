@@ -30,11 +30,12 @@ export class CampaignComponent implements OnInit {
   customOptions: OwlOptions = {
     margin: 24,
     autoplay:true,
+    autoplayTimeout:5000,
     autoplayHoverPause:true,
     autoplaySpeed:200,
     loop: true,
     mouseDrag: false,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,

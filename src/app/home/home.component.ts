@@ -43,13 +43,14 @@ export class HomeComponent implements OnInit {
       margin: 24,
       autoplay:true,
       autoplayHoverPause:true,
+      autoplayTimeout:2000,
       autoplaySpeed:200,
       loop: true,
       mouseDrag: false,
-      touchDrag: false,
+      touchDrag: true,
       pullDrag: false,
       dots: true,
-      navSpeed: 700,
+      navSpeed: 20,
       navText: ['<', '>'],
       responsive: {
         0: {
