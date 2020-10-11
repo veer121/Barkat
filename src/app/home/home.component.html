@@ -1,8 +1,11 @@
 <div class="container-fluid main">
     <app-header *ngIf="homeHeader"></app-header>
     <div class="container main-text" style="display:flex;flex-direction:column;text-align: center;margin-top:5% ">
-        <span  style="font-size: calc(1rem + 3vw);color:white">Barkat</span>
-        <span style="color:white;text-align:center;">Improving the quality of live for youth with cognitive challanges and extraordinary behavioural needs</span>
+        <span style="font-size: calc(1rem + 3vw);color:white">Barkat</span>
+        <span style="color:white;text-align:center;">
+            The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it
+            make some difference that you have lived and lived well
+        </span>
         <div class="tour">
             <span
                 style="padding:10px 25px;background-color:#c72c41;border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
@@ -19,8 +22,8 @@
 <div class="container">
     <div class="row videoo">
         <div class="col-md-6 col-xs-12" style="width:100%">
-            <video style="margin-right:auto;margin-left:auto" id="my-video" class="video-js" controls preload="auto"  width="90%"  height="365"
-                poster="../../assets/tree.jpeg" data-setup="{}">
+            <video style="margin-right:auto;margin-left:auto" id="my-video" class="video-js" controls preload="auto"
+                width="90%" height="365" poster="../../assets/tree.jpeg" data-setup="{}">
                 <source src="../../assets/yo.mp4" type="video/mp4" />
                 <source src="MY_VIDEO.webm" type="video/webm" />
                 <p class="vjs-no-js">
@@ -29,12 +32,16 @@
                     <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                 </p>
             </video>
-            
+
         </div>
         <div class="col-xs-12 col-md-6 " style="display:flex;flex-direction:column;justify-content: space-evenly;">
             <h1 style="color: rgb(52,73,94);font-size:calc(1.8rem + 0.8vw);font-weight:600">We're here to help</h1>
             <p style="color:rgb(60,80,100);font-size:1.3rem;margin-top:5%">Barkat- “A step towards humanity
-                Our major objective as a welfare association is to identify the multi facet problems that our nation is facing and persistently sensitising the youth towards it.  We vision to facilitate the innate humanity within each individual and channelize it into compassionate and selfless service towards mankind. We thoroughly believe in and there by implement the principle of sewa, and endeavour to inculcate it within the youth."
+                Our major objective as a welfare association is to identify the multi facet problems that our nation is
+                facing and persistently sensitising the youth towards it. We vision to facilitate the innate humanity
+                within each individual and channelize it into compassionate and selfless service towards mankind. We
+                thoroughly believe in and there by implement the principle of sewa, and endeavour to inculcate it within
+                the youth."
             </p>
 
             <!-- <span class="watch-btn"  (click)="play()">Watch Video</span> -->
@@ -60,21 +67,21 @@
 </div>
 <div class="orange-zone container-fluid">
     <div class="container" style="height:100%">
-        <div class="row" style="height:100%" >
+        <div class="row" style="height:100%">
             <div class="col-md-12" style="display:flex;justify-content: center;">
                 <h1 style="font-size:3rem;font-weight: 600;color:white;">Our Aim</h1>
-        </div>
-            <div  class="col-md-12 orange-content">
-                <p >Our work aims is to break the vicious
-                        cycle of poverty and social isolation and to restore hope for a better future.
-                        We believe that every person has the right to access resources and opportunities
-                        in order to live and develop with dignity and to become an active and
-                        contributing member of our society. </p>
-                <p >We also believe that
-                        we should provide our environment in return of what we take, so we are aiming to
-                        plant 10,000 plants in one month in our current drive and will be contributing
-                        to the environment ahead in future in whatever way we can.</p>
-        </div>
+            </div>
+            <div class="col-md-12 orange-content">
+                <p>Our work aims is to break the vicious
+                    cycle of poverty and social isolation and to restore hope for a better future.
+                    We believe that every person has the right to access resources and opportunities
+                    in order to live and develop with dignity and to become an active and
+                    contributing member of our society. </p>
+                <p>We also believe that
+                    we should provide our environment in return of what we take, so we are aiming to
+                    plant 10,000 plants in one month in our current drive and will be contributing
+                    to the environment ahead in future in whatever way we can.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -84,67 +91,69 @@
 <div class="container p-cards">
     <div class="row" style="margin-right: unset;margin-left: unset;">
         <div class="col-md-4 col-xm-12" *ngFor="let e of mentorImages;let i = index">
-    <div class=" cardy" style="margin:10% auto">
-        <div class="cardy-main" id="{{i}}">
-            <div  class="cardy-front">
-                <div class="cardy-header">
-                    <div [ngStyle]="{'background-image':e.image}"></div>
-                    <h2>{{e.name}}</h2>
-                    <h3>( {{e.position}} )</h3>
-                </div>
-                <div class="wave-container">
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                </div>
-                <div class="iconss" *ngIf="i>0 && i<4">
-                    <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="iconss" *ngIf="i==0 || i==4">
-                    <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
-                    <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->
-                    <a href="{{e.link}}" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
-                </div>
+            <div class=" cardy" style="margin:10% auto">
+                <div class="cardy-main" id="{{i}}">
+                    <div class="cardy-front">
+                        <div class="cardy-header">
+                            <div [ngStyle]="{'background-image':e.image}"></div>
+                            <h2>{{e.name}}</h2>
+                            <h3>( {{e.position}} )</h3>
+                        </div>
+                        <div class="wave-container">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                        <div class="iconss" *ngIf="i>0 && i<4">
+                            <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="iconss" *ngIf="i==0 || i==4">
+                            <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->
+                            <a href="{{e.link}}" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
+                        </div>
 
-            </div>
-            <div *ngIf="i>2" class="cardy-back" style="position:relative">
-                <div style="position:absolute;left:20px;top:60px;text-align: center;">
-                    <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.</span>
-                </div>
+                    </div>
+                    <div *ngIf="i>2" class="cardy-back" style="position:relative">
+                        <div style="position:absolute;left:20px;top:60px;text-align: center;">
+                            <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s.</span>
+                        </div>
 
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
-</div>
-    
-</div>
 </div>
 
 <!-- ---------------------------------------------Associates--------------------------------------------------------------- -->
 
 <div class="container-fluid">
-    <div class="row" >
+    <div class="row">
         <div class="col-md-12" style="display:flex;justify-content: center;">
-                <h1 class="associates" >Our Associates</h1>
+            <h1 class="associates">Our Associates</h1>
         </div>
         <div class="col-md-12">
-    <!-- OWL Crousel -->
-    <div style="margin-top: 5vh;margin-bottom: 5vh;">
-        <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide *ngFor="let e of images">
-                        <div [ngStyle]="{'background-image':e.image}" class="img-container" (click)="openImage(e.image)">
-                                <!-- <p [ngStyle]="{'color':e.color}">
+            <!-- OWL Crousel -->
+            <div style="margin-top: 5vh;margin-bottom: 5vh;">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let e of images">
+                        <div [ngStyle]="{'background-image':e.image}" class="img-container"
+                            (click)="openImage(e.image)">
+                            <!-- <p [ngStyle]="{'color':e.color}">
                                         {{e.title}}</p> -->
                         </div>
-                </ng-template>
-        </owl-carousel-o>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
     </div>
-    </div>
-    </div>
-    </div>
+</div>
 
 <div class="container-fluid help-btn-area">
     <span class="help-btn" routerLink="/objective">Objectives</span>
