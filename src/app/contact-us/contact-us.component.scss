@@ -137,6 +137,23 @@ form {
 // }
 
 
+.success{
+    position:absolute;
+    z-index:10;
+    bottom:20px;
+    left:35%;
+    display:none;
+    color:white;
+    background:black;
+    border-radius: 7px;
+    padding:10px 15px
+}
+
+.success > p{
+    margin:auto;
+    font-size:1.1rem;
+}
+
 
 @media all and (max-width:768px){
 
@@ -192,4 +209,21 @@ form {
     
         background-image: url(../../assets/letter_bg.png);
     }
+
+    .success{
+        position:absolute;
+        z-index:10;
+        bottom:55px;
+        left:30%;
+        display:none;
+        color:white;
+        background:black;
+        border-radius: 7px;
+        padding:10px 15px
+    }
+
+    .success> p{
+        font-size:0.8rem;
+    }
+
 }

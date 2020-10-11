@@ -1,7 +1,9 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject  } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
-import { FormArray, FormControl, FormGroup } from '@angular/forms'
+import { FormArray, FormControl, FormGroup, FormBuilder, Validators, } from '@angular/forms';
+import { gsap } from 'gsap';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-contact-us',
@@ -11,22 +13,35 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms'
 export class ContactUsComponent implements OnInit {
 
   object;
+  contact: FormGroup;
 
-  constructor(public db: AngularFireDatabase) {
+  constructor( @Inject(DOCUMENT) private document: Document, public db: AngularFireDatabase, private fb: FormBuilder,) {
 
 
   }
 
-  contact = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    contact: new FormControl(''),
-    subject: new FormControl(''),
-    message: new FormControl(''),
-  })
+
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
+
+    this.contact = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', Validators.email],
+      contact: ['', [Validators.pattern("^[0-9]+$"), Validators.minLength(10), Validators.maxLength(10)]],
+      subject: ['', Validators.required],
+      message: ['', Validators.required],
+    })
+  }
+
+  checkFormValidity() {
+    // console.log(this.registrationForm['status']);
+    if (this.contact['status'] == "VALID") {
+      return false;
+    }
+    else if (this.contact['status'] == "INVALID") {
+      return true;
+    }
   }
 
   homeHeader = true;
@@ -48,6 +63,9 @@ export class ContactUsComponent implements OnInit {
 
     this.db.object('contactus/' + pushId).set(this.object).then(res => {
       console.log(res);
+
+      gsap.fromTo(this.document.querySelector('.success'), { opacity:0,display:'none',y:'20%' },{opacity:1, display:'block', y:0, ease: "power2.out", duration: 2, delay:1.5});
+      gsap.to(this.document.querySelector('.success'),{display:'none',opacity:0,duration:1.5, delay:4.5})
 
       document.getElementById("form-wrap").classList.remove("form-wrap-anim")
       document.getElementById("form").classList.remove("form-anim")

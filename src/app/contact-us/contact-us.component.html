@@ -62,10 +62,14 @@
                         <textarea matInput rows="5" placeholder="How can we help?" formControlName="message"></textarea>
                     </mat-form-field>
 
-                    <button mat-raised-button color="primary" type="submit">Submit</button>
+                    <button mat-raised-button color="primary" type="submit" [disabled]="checkFormValidity()">Submit</button>
 
                 </form>
 
+            </div>
+
+            <div class="success">
+                <p>Message sent</p>
             </div>
 
         </div>
