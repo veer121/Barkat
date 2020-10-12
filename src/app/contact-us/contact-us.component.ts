@@ -27,8 +27,8 @@ export class ContactUsComponent implements OnInit {
 
     this.contact = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.email],
-      contact: ['', [Validators.pattern("^[0-9]+$"), Validators.minLength(10), Validators.maxLength(10)]],
+      email: ['', [Validators.required, Validators.email]],
+      contact: ['', [Validators.required, Validators.pattern("^[0-9]+$"), Validators.minLength(10), Validators.maxLength(10)]],
       subject: ['', Validators.required],
       message: ['', Validators.required],
     })
