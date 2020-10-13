@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() headerAppear: boolean;
+  // @Input() headerAppear: boolean;
+  @Input() textColor: any;
 
   constructor() { }
 
