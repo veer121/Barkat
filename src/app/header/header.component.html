@@ -1,6 +1,6 @@
 <div class="main">
     <div style="flex: 1;"></div>
-    <div style="display:flex;">
+    <div style="display:flex;" [ngStyle]="{'color':textColor}" >
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}" routerLink="/">Home</span>
         <span [ngClass]="{'nav-links':!homeHeader,'nav-links-anime':homeHeader}"
             routerLink="/objective">Objectives</span>
