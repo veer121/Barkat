@@ -130,6 +130,13 @@ span {
     text-decoration: none;
 }
 
+@media all and (max-width:767.9px){
+    .logo-anime{
+        width:20%;
+        margin-left:5%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .main span {
         display: none;
@@ -137,6 +144,7 @@ span {
     .mb-menu span {
         flex: 1;
     }
+
 }
 
 @media only screen and (max-width: 900px) {

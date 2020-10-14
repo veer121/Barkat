@@ -105,7 +105,7 @@
 }
 
 .orange-zone{
-    min-height:fit-content;
+    height:fit-content;
     padding:5% 0;
     width:100%;
     background: 
@@ -123,6 +123,7 @@
 }
 
 .orange-content{
+    width:100%;
     margin-top:3%;
     display:flex;
     flex-direction:column;

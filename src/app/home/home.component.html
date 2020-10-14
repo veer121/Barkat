@@ -21,7 +21,7 @@
 
 <div class="container">
     <div class="row videoo">
-        <div class="col-md-6 col-xs-12" style="width:100%">
+        <div class="col-md-6 " style="width:100%">
             <video style="margin-right:auto;margin-left:auto" id="my-video" class="video-js" controls preload="auto"
                 width="90%" height="365" poster="../../assets/tree.jpeg" data-setup="{}">
                 <source src="../../assets/yo.mp4" type="video/mp4" />
@@ -34,7 +34,7 @@
             </video>
 
         </div>
-        <div class="col-xs-12 col-md-6 " style="display:flex;flex-direction:column;justify-content: space-evenly;">
+        <div class=" col-md-6 " style="display:flex;flex-direction:column;justify-content: space-evenly;">
             <h1 style="color: rgb(52,73,94);font-size:calc(1.8rem + 0.8vw);font-weight:600">We're here to help</h1>
             <p style="color:rgb(60,80,100);font-size:1.3rem;margin-top:5%">Barkat- “A step towards humanity."
                 Our major objective as a welfare association are to identify the multi facet problems that our nation is
@@ -68,7 +68,7 @@
 <div class="orange-zone container-fluid">
     <div class="container" style="height:100%">
         <div class="row" style="height:100%">
-            <div class="col-md-12" style="display:flex;justify-content: center;">
+            <div class="col-md-12" style="display:flex;">
                 <h1 style="font-size:3rem;font-weight: 600;color:white;">Our Aim</h1>
             </div>
             <div class="col-md-12 orange-content">
@@ -90,7 +90,7 @@
 
 <div class="container p-cards">
     <div class="row" style="margin-right: unset;margin-left: unset;">
-        <div class="col-md-4 col-xm-12" *ngFor="let e of mentorImages;let i = index">
+        <div class="col-md-4 col-xm-12" *ngFor="let e of mentorImages1;let i = index">
             <div class=" cardy" style="margin:10% auto">
                 <div class="cardy-main" id="{{i}}">
                     <div class="cardy-front">
@@ -104,11 +104,11 @@
                             <div class="wave"></div>
                             <div class="wave"></div>
                         </div>
-                        <div class="iconss" *ngIf="i>0 && i<4">
+                        <div class="iconss" *ngIf="i>0 && i<3">
                             <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
                             <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="iconss" *ngIf="i==0 || i==4">
+                        <div class="iconss" *ngIf="i==0 ">
                             <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
                             <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
                             <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->
@@ -116,14 +116,38 @@
                         </div>
 
                     </div>
-                    <div *ngIf="i>2" class="cardy-back" style="position:relative">
-                        <div style="position:absolute;left:20px;top:60px;text-align: center;">
-                            <span class="founder-quote">Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s.</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xm-12" *ngFor="let e of mentorImages2;let i = index">
+            <div class=" cardy" style="margin:10% auto">
+                <div class="cardy-main" id="{{i}}">
+                    <div class="cardy-front">
+                        <div class="cardy-header">
+                            <div [ngStyle]="{'background-image':e.image}"></div>
+                            <h2>{{e.name}}</h2>
+                            <h3>( {{e.position}} )</h3>
+                        </div>
+                        <div class="wave-container">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                        <div class="iconss" *ngIf="i==0">
+                            <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="iconss" *ngIf="i==1">
+                            <a href="{{e.fb}}" target="_blank" class="link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{e.insta}}" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href="{{e.twit}}" target="_blank" class="link"><i class="fab fa-twitter"></i></a> -->
+                            <a href="{{e.link}}" target="_blank" class="link"><i class="fab fa-linkedin"></i></a>
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
