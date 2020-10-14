@@ -16,6 +16,11 @@
     background-attachment: fixed;
 }
 
+.main-logo{
+    max-width:20%;
+    margin:0 auto 2% auto;
+}
+
 .main-text>span:nth-child(2){
     position:relative;
     font-size:calc(1.5rem + 1vw)
@@ -65,7 +70,8 @@
 }
 
 .blue-zone{
-    height:100vh;
+    height:fit-content;
+    padding:5% 0;
     width:100%;
     background: 
     /* top, transparent red, faked with gradient */ 
@@ -88,6 +94,14 @@
     flex-direction:column;
     align-items: center;
     justify-content: center;
+}
+
+.blue-zone>div>span{
+    color:white;
+    font-size:1.3rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:600;
+    margin:2% 0
 }
 
 .orange-zone{
@@ -454,6 +468,12 @@
   }
 
   @media all and (max-width:767.9px){
+
+    .main-logo{
+        max-width:50%;
+        margin:15% auto 10% auto;
+    }
+
       .videoo{
           display:flex;
           flex-direction: column-reverse;
@@ -465,6 +485,10 @@
 
       .orange-content>span:nth-child(2){
         margin:10% 0;
+    }
+
+    .blue-zone>div>span{
+        margin:5% 0;
     }
   }
 
