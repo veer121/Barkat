@@ -21,8 +21,14 @@ body {
 }
 
 .logo-anime{
+    height:100%;
     width:5%;
     margin-left:5%;
+}
+
+.logo-anime > img{
+    height:100%;
+    width:100%
 }
 
 .nav-links {
@@ -132,8 +138,13 @@ span {
 
 @media all and (max-width:767.9px){
     .logo-anime{
-        width:20%;
+        height:100%;
         margin-left:5%;
+        width:20%;
+    }
+
+    .logo-anime > img{
+        height:100%;
     }
 }
 
@@ -151,5 +162,18 @@ span {
     .nav-links{
         margin-left: 1.0rem;
         margin-right: 1.0rem;
+    }
+}
+
+
+@media all and (min-width:768px) and(max-width:1024px){
+    .logo-anime{
+        height:100%;
+        margin-left:5%;
+        width:10%;
+    }
+
+    .logo-anime > img{
+        height:100%;
     }
 }
