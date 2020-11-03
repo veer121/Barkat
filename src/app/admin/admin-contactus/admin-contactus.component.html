@@ -11,7 +11,7 @@
             <th>Subject</th>
         </tr>
 
-        <tr *ngFor="let e of obj;let i = index" (click)="dialogControler(e)">
+        <tr style="cursor:pointer" *ngFor="let e of obj;let i = index" (click)="dialogControler(e)">
             <td>{{i+1}}</td>
             <td>{{e.name}}</td>
             <td>{{e.email}}</td>
