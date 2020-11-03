@@ -1,19 +1,7 @@
 <div style="min-height: 100vh">
 
-    <mat-drawer-container class="example-container" style="min-height: 100vh;">
-        <mat-drawer mode="side" opened style="z-index: 1;">
+    <mat-drawer-container class="example-container" style="min-height: 100vh;min-width: 100%;">
 
-            <div style="height: 100%;">
-                <mat-selection-list #shoes [multiple]="false">
-                    <!-- <mat-list-option (click)="page='summary'">Summary</mat-list-option> -->
-                    <mat-list-option (click)="page='contactus'">Contact Us</mat-list-option>
-                    <!-- <mat-list-option (click)="page='footer'">Footer</mat-list-option> -->
-                    <!-- <mat-list-option>Media</mat-list-option>
-                    <mat-list-option>Album</mat-list-option> -->
-                </mat-selection-list>
-            </div>
-
-        </mat-drawer>
         <mat-drawer-content>
 
             <app-admin-dash-nav></app-admin-dash-nav>
