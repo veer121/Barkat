@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'contactus', component: ContactUsComponent },
   { path: 'adminLogin', component: AdminLoginComponent },
   { path: 'adminDash', component: AdminDashboardComponent },
-  { path: 'admin', component: AdminPageComponent },
+  // { path: 'admin', component: AdminPageComponent },
   { path: 'objective', component: AboutUsComponent },
   { path: 'campaign', component: CampaignComponent },
   { path: 'gallery', component: GalleryComponent },
