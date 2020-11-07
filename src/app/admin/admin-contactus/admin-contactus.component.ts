@@ -10,6 +10,9 @@ export class AdminContactusComponent implements OnInit {
 
   constructor(public userService: UserService) { }
 
+  columnHeadings = ['S.No.', 'Name', 'Email', 'Subject', 'Status'];
+  statusOptions= ['NEW', 'CHECKED']
+
   obj = [];
 
   ngOnInit(): void {
@@ -23,6 +26,7 @@ export class AdminContactusComponent implements OnInit {
       }
 
     })
+
 
   }
 
@@ -42,6 +46,13 @@ export class AdminContactusComponent implements OnInit {
   dialogControler(e) {
     this.message = e.message
     this.openDialog = !this.openDialog
+  }
+
+  update(value, i, type){
+    this.userService.updateValue(status)
+    console.log(status);
+    this.obj[status]=value;
+    
   }
 
 }

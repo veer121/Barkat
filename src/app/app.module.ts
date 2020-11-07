@@ -28,6 +28,7 @@ import { CampaignComponent } from './campaign/campaign.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
+import { MatTabsModule, MatTabGroup } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FounderComponent } from './founder/founder.component';
 import { MediaCuttingsComponent } from './media-cuttings/media-cuttings.component';
@@ -37,6 +38,8 @@ import { AdminContactusComponent } from './admin/admin-contactus/admin-contactus
 import { MatTableModule } from '@angular/material/table';
 import { AdminFooterComponent } from './admin/admin-footer/admin-footer.component';
 import { AdminSummaryComponent } from './admin/admin-summary/admin-summary.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -78,7 +81,10 @@ import { AdminSummaryComponent } from './admin/admin-summary/admin-summary.compo
     MatDialogModule,
     MatSidenavModule,
     MatListModule,
-    MatTableModule
+    MatTabsModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   entryComponents: [ImageViewerComponent],
   providers: [],

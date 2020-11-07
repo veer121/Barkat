@@ -42,6 +42,10 @@ export class UserService {
     return this.db.list('contactus').valueChanges();
   }
 
+  updateValue(obj){
+    return this.db.list('contactus').update(status, obj);
+  }
+
   updateFooter(obj) {
     return this.db.object('footer').set(obj);
   }

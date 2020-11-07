@@ -1,14 +1,50 @@
 <h3>Contact Us Form</h3>
 
-<div>
-
+<mat-tab-group>
+<mat-tab>
+    <ng-template mat-tab-label>
+        <mat-icon>add</mat-icon>
+        NEW
+      </ng-template>
     <table>
 
         <tr>
-            <th>S. No</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Subject</th>
+            <th *ngFor="let col of columnHeadings">{{col}}</th>
+
+        </tr>
+
+        <tr style="cursor:pointer" *ngFor="let e of obj;let i = index" >
+            <td (click)="dialogControler(e)">{{i+1}}</td>
+            <td (click)="dialogControler(e)">{{e.name}}</td>
+            <td (click)="dialogControler(e)">{{e.email}}</td>
+            <td (click)="dialogControler(e)">{{e.subject}}</td>
+            <td>
+                <mat-form-field>
+                    <mat-label>{{e.status}}</mat-label>
+                    <mat-select (selectionChange)="update($event.value,i, 'NEW')">
+                      <mat-option *ngFor="let option of statusOptions" [value]="option">
+        
+                        {{option}}
+        
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+        </tr>
+
+    </table>
+
+</mat-tab>
+<mat-tab>
+    <ng-template mat-tab-label>
+        <mat-icon>check</mat-icon>
+        CHECKED
+      </ng-template>
+    <table>
+
+        <tr>
+            <th *ngFor="let col of columnHeadings">{{col}}</th>
+
         </tr>
 
         <tr style="cursor:pointer" *ngFor="let e of obj;let i = index" (click)="dialogControler(e)">
@@ -16,11 +52,58 @@
             <td>{{e.name}}</td>
             <td>{{e.email}}</td>
             <td>{{e.subject}}</td>
+            <td>{{e.status}}</td>
         </tr>
 
     </table>
 
-</div>
+</mat-tab>
+</mat-tab-group>
+<!-- <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>add</mat-icon>
+      OPEN
+    </ng-template>
+
+    <div>
+
+      <div style="border-bottom:none" class="tableHead">
+        <div *ngFor="let e of columnHeadings">{{e}}</div>
+      </div>
+
+      <div [ngStyle]="{'background-color':((i%2)==0)?'rgb(222, 234, 246);':'whitesmoke'}" class="tableData"
+        *ngFor="let e of OPEN_CONTACT;let i = index">
+        <div (click)="openDialog(e)">{{OPEN_CONTACT.length -i}}</div>
+        <div (click)="openDialog(e)">{{e.Mentor_Name}}</div>
+        <div (click)="openDialog(e)">{{e.Name}}</div>
+        <div (click)="openDialog(e)">{{e.Email}}</div>
+        <div (click)="openDialog(e)">{{e.Phone}}</div>
+        <div (click)="openDialog(e)">{{e.nameOfStartup}}</div>
+        <div>
+        <div style="padding:0;margin-left:15%;" matTooltip="Incubated at Amity" *ngIf="e.IncubatedAtAmity == 'yes'"><img src="../../assets/check.svg" alt=""></div>
+        <div style="padding:0;margin-left:15%;" matTooltip="Incubated at Amity" *ngIf="e.IncubatedAtAmity == 'no'"><img src="../../assets/cross.svg" alt=""></div>
+       </div>
+        
+
+          <mat-form-field>
+            <mat-label>{{e.MentorConnect_Status}}</mat-label>
+            <mat-select (selectionChange)="status($event.value,i,'OPEN')">
+              <mat-option *ngFor="let option of statusSelectOptions" [value]="option">
+
+                {{option}}
+
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div  (click)="openDialog(e)"  style=" font-size: 12px; font-weight: bold;" >{{getDateTime(e.Date_Punched)}}</div>
+
+      
+      </div>
+
+    </div>
+
+
+  </mat-tab> -->
 
 <div style="width: 100%; height: 100%; background-color: #00000087; position: fixed; top: 0; left: 0;z-index: 2;"
     *ngIf="openDialog">
